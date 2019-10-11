@@ -12,3 +12,5 @@
   
 * App Engine: PAAS
  * You focus on the application envoirnment, underlying os and hardware is autoselected and maintained by cloud
+
+* It is a best practice to keep the data and vm instance seperate so that a analytics (big query) can work on data. GCP provides storage services through BigTable, Storage, Spanner, SQL, DataStore.
