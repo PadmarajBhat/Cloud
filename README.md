@@ -16,3 +16,4 @@
 * It is a best practice to keep the data and vm instance seperate so that a analytics (big query) can work on data. GCP provides storage services through BigTable, Storage, Spanner, SQL, DataStore.
 Dataflow: pipe between data source to another eg. from stream to table
 automl: help u to build a ml model suited for the current req. 
+dialog flow, vision nlp etc are prebuilt google model for ready to use purpose
