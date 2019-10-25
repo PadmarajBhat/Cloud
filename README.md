@@ -17,3 +17,4 @@
 Dataflow: pipe between data source to another eg. from stream to table
 automl: help u to build a ml model suited for the current req. 
 dialog flow, vision nlp etc are prebuilt google model for ready to use purpose
+Data Studio: can work on dataset which can be either table or csv/json etc or can be on top of a big query results
