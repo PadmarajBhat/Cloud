@@ -30,3 +30,11 @@ Data Studio: can work on dataset which can be either table or csv/json etc or ca
  * Data can also be exported to cloud storage. Therefore, from an external source directly import it to bigquery and through export keep a back up at cloud storage for future use.
  
  * The UNNEST operator takes an ARRAY and returns a table, with one row for each element in the ARRAY. 
+ 
+* DataFlow
+ * uses beam for the intermediate read and write
+ * in Python : "|" indicates apply and ">>" indicates a name for a single step in the pipeline
+ * you can initiate the dataflow job through command prompt. In the UI, you can see the top to bottom steps/stages. It executes in that order.
+ * a tick mark appears indicating the completion for each stage.
+ * at times the output UI might mislead with end step being tick before to prior stages. Wait for all stages to complete or output dir.
+ * any stage can take "side input" (through) big query or real time data.
