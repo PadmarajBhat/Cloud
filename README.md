@@ -56,3 +56,9 @@ Data Studio: can work on dataset which can be either table or csv/json etc or ca
   * ```from google.datalab.ml import TensorBoard
 TensorBoard().start('./taxi_trained')
 TensorBoard().list()```
+
+   * I guess , cloud ml does the same job as that of tensor hub
+    * make sures input pipe line same for both training and prediction
+    * versioning of models
+    * availability of the model through rest apis
+    * hyper parameter tuning and remembering it
