@@ -50,3 +50,4 @@ Data Studio: can work on dataset which can be either table or csv/json etc or ca
    trips = client.query(sql).to_dataframe()
    trips
    ```
+  * TF 1.x was focussed on graph building and then executing the graph. tf2.0 is eager execution by default.
