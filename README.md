@@ -53,3 +53,6 @@ Data Studio: can work on dataset which can be either table or csv/json etc or ca
   * TF 1.x was focussed on graph building and then executing the graph. tf2.0 is eager execution by default.
   * ```tf.estimator.inputs.pandas_input_fn``` : loads the panda to tf; I guess better way is tf.data
   * TrainSpec and EvalSpec does the checkpoints and hence helps to have fault tolerance in case of failure
+  * ```from google.datalab.ml import TensorBoard
+TensorBoard().start('./taxi_trained')
+TensorBoard().list()```
