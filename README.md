@@ -43,3 +43,10 @@ Data Studio: can work on dataset which can be either table or csv/json etc or ca
  * https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.90213&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false   : play ground to understand the impact of different layers
  * precision: How many corrects are predicted are correct.
  * Recall: Are categories predicted correct ? Plays important role when it comes to imbalanced data.
+ 
+ * google cloud packages are available google datalab(notebook)
+   ```from google.cloud import bigquery
+   client = bigquery.Client()
+   trips = client.query(sql).to_dataframe()
+   trips
+   ```
