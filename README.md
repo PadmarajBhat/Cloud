@@ -67,3 +67,9 @@ TensorBoard().list()```
       * if customer rating is between 1-5. is it a continuous or categorical ? I think it can be categorical but it can be both. What if the rating is not given?
         * the author of the GCP Data Engineer course say that dont use -1. Instead use additional column indicating rating given or not.
            * why cant it be that -1 and then one hot encode it ?
+           
+           
+      * Feature cross: It is programmer explicitly hinting the combined effect of 2 features. for eg. if there are relation between dayofweek and rush hour then feature cross would amplify the crossed value and thus indicating the model of the importance.
+      * Bucketizing: a continuous value is grouped into buckets.
+      * wide and deep: some features are linearly mapped to ouput and some features are mapped to output through dense layers. Sparse columns are best candidates for the "wide" connection.
+      
