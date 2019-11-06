@@ -62,3 +62,5 @@ TensorBoard().list()```
     * versioning of models
     * availability of the model through rest apis
     * hyper parameter tuning and remembering it
+  * Feature Engineering:
+    * one hot encoding : we all know the importance of it but what if we cannot anticipant new value to the categorical feature? we will have to rebuilt the model
