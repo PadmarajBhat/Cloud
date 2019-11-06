@@ -73,3 +73,4 @@ TensorBoard().list()```
       * Bucketizing: a continuous value is grouped into buckets.
       * wide and deep: some features are linearly mapped to ouput and some features are mapped to output through dense layers. Sparse columns are best candidates for the "wide" connection.
       
+     * Ran a big query based data preprocessing and DNN model building.
