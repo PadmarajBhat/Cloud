@@ -64,3 +64,6 @@ TensorBoard().list()```
     * hyper parameter tuning and remembering it
   * Feature Engineering:
     * one hot encoding : we all know the importance of it but what if we cannot anticipant new value to the categorical feature? we will have to rebuilt the model
+      * if customer rating is between 1-5. is it a continuous or categorical ? I think it can be categorical but it can be both. What if the rating is not given?
+        * the author of the GCP Data Engineer course say that dont use -1. Instead use additional column indicating rating given or not.
+           * why cant it be that -1 and then one hot encode it ?
