@@ -74,3 +74,11 @@ TensorBoard().list()```
       * wide and deep: some features are linearly mapped to ouput and some features are mapped to output through dense layers. Sparse columns are best candidates for the "wide" connection.
       
      * Ran a big query based data preprocessing and DNN model building.
+
+* Streaming:
+  * Infinite data
+  * Pub/Sub provides fault tolerat queuing solution where at one end messages are received and other end messages are fetched
+  * Dataflow: provides the infrastructre to handle the latency in the data
+  * Bigtable: no SQL fast throughput real time processing in milliseconds
+  * Bigquery: SQL real time processing in seconds.
+     
