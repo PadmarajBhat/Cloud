@@ -82,3 +82,4 @@ TensorBoard().list()```
   * Bigtable: no SQL fast throughput real time processing in milliseconds
   * Bigquery: SQL real time processing in seconds.
      
+* Pub-Sub: Asynchronous communication between publisher and subscriber. Holds the data for 7 days by default. Auto scales for the growing demand. unline online communication Pub and Sub may or may not be online at same time. At least once guarantee is provided and hence there may be duplicates. There can be DataFlow in conjuction which can act as stateful operation to handle duplicates and latency in data.
