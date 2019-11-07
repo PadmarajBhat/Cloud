@@ -91,3 +91,9 @@ TensorBoard().list()```
  * watermark: heurastic indicating if the window has all the events which are supposed to be in it or it has to wait till it comes
  * trigger: action we need to take on arrival of late data.
 
+* BigTable:
+  * it is no sql but the row key has to be carefully designed. Write and Read performance has direct influence from the row key.
+  * from row perspective, family of related columns has to be placed together for better performance
+  * again, data and cluster nodes are segregated. Bigtable just points to the cloud storage and hence data nodes can be added or removed online.
+  * dataflow can injest data into it
+  * it is structural, non transactional high throughput no sql data storage.
