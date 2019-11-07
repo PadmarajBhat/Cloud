@@ -83,3 +83,9 @@ TensorBoard().list()```
   * Bigquery: SQL real time processing in seconds.
      
 * Pub-Sub: Asynchronous communication between publisher and subscriber. Holds the data for 7 days by default. Auto scales for the growing demand. unline online communication Pub and Sub may or may not be online at same time. At least once guarantee is provided and hence there may be duplicates. There can be DataFlow in conjuction which can act as stateful operation to handle duplicates and latency in data.
+
+
+* Window, watermark, triggers:
+ * window: can be fixed, sliding or session
+ * watermark: heurastic indicating if the window has all the events which are supposed to be in it or it has to wait till it comes
+ * trigger: action we need to take on arrival of late data.
