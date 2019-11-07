@@ -38,6 +38,7 @@ Data Studio: can work on dataset which can be either table or csv/json etc or ca
  * a tick mark appears indicating the completion for each stage.
  * at times the output UI might mislead with end step being tick before to prior stages. Wait for all stages to complete or output dir.
  * any stage can take "side input" (through) big query or real time data.
+ * Dataflow cannot directly write into table but instead insted uses BigQuery for the same. This is applicable for both Batch and Stream.
 
 * TF in Cloud
  * https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.90213&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false   : play ground to understand the impact of different layers
@@ -89,3 +90,4 @@ TensorBoard().list()```
  * window: can be fixed, sliding or session
  * watermark: heurastic indicating if the window has all the events which are supposed to be in it or it has to wait till it comes
  * trigger: action we need to take on arrival of late data.
+
