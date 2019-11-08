@@ -11,3 +11,13 @@
    * ```kubectl expose deployment hello-server --type=LoadBalancer --port 8080``` : Here those services (or server from app perspective) comes live and exposed through tcp port. ```kubectl get service``` shows the external ip. When you hit the external ip for the "service" [name is as determined by the app], kubernetes master takes the request and runs the same in one of the worker and the reply from the same is sent back. Here, hello-server is the kubernetes engine object name and service name is "hello-web". HTTP request hits the app service and not kubernetes object.
    
    * terminating is again through gcloud command which started the cluster ```gcloud container clusters delete [CLUSTER-NAME]```
+
+
+* Load Balancer:
+   * Network Load Balancing: Load Balances traffic among the VM instances in the same region in VPC network. So forwarding rule is created which gives us an ip which abstracts the vm ip addresses. Routing / Load balancing is the magic.
+   * HTTPS Load Balancing: Best explained in the url [https://cloud.google.com/load-balancing/images/https-load-balancer-diagram.svg]
+      * first define health check of vm instance to http
+      * create a map of http service to port number
+      * create a URL for map
+      * direct a proxy to the url map
+      * create a forwarding rule to the proxy
