@@ -12,3 +12,12 @@
   * PipelineRunner
   * Read 
   * Write
+##### Dataproc
+ * in either command or through console steps are 2
+  * create cluster
+   ```gcloud dataproc clusters create example-cluster```
+  * submit job
+  ```gcloud dataproc jobs submit spark --cluster example-cluster \
+  --class org.apache.spark.examples.SparkPi \
+  --jars file:///usr/lib/spark/examples/jars/spark-examples.jar -- 1000```
+  
