@@ -8,3 +8,9 @@
  * In SQL, you can have variable name defined and then the same can be used in query.
       * ```SET @ARR_DELAY_THRESH = 15;```
       * ```select count(dest) from flights where arr_delay < @ARR_DELAY_THRESH and dep_delay < @DEP_DELAY_THRESH;```
+* Beam can read directly the gz file
+   ```
+   beam.io.ReadFromText('airports.csv.gz')
+   
+   ```
+   runner : --runner=DataflowRunner indicates beam that it has to run in GCP Dataflow. Where first cluster of pool is created which can autoscale then the pipe is executed.
