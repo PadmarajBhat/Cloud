@@ -7,3 +7,8 @@
   * Org node is mandatory only when folder is required.
   * Service account provide policies to resource instances. They use keys to authorize the resource usage. Other polices are to the roles and password driven.
   * Primitive roles affect all resources in a GCP project. Predefined roles apply to a particular service in a project. A answer that took 8 attempts :P
+  
+* compute engine:
+  * 2 vm can interact with each other. i.e.
+    * i can ping other vm from one
+    * I can do ssh to access the other vm
