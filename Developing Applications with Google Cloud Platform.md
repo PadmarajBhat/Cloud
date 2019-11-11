@@ -12,3 +12,6 @@
   * 2 vm can interact with each other. i.e.
     * i can ping other vm from one
     * I can do ssh to access the other vm
+
+* Storage:
+ * Datastore is the miniature version of BigTable.
