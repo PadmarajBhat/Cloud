@@ -12,10 +12,14 @@
   * 2 vm can interact with each other. i.e.
     * i can ping other vm from one
     * I can do ssh to access the other vm
+    * you cannot ssh from gcloud to vm
 
 * Storage:
  * Datastore is the miniature version of BigTable.
- 
- 
-* ACL configuration command for Bucket
+ * ACL configuration command for Bucket
    * ```gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png```
+     * here public access is given to an image file
+   * File is accessed through url.  
+
+* SQL :
+  * just like we have ACL and then we can access "Bucket" through url,  we have "add network" where we can specify the VM instance ip which would have access to SQL. Further SQL is accessed through ip address, user name and password. User name and password are usually configured soon after SQL creation. In bucket, you can merely refer to the url, however, in sql you have to make connection through allowed network and with user credentials.
