@@ -15,3 +15,7 @@
 
 * Storage:
  * Datastore is the miniature version of BigTable.
+ 
+ 
+* ACL configuration command for Bucket
+   * ```gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png```
