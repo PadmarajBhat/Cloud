@@ -23,3 +23,9 @@
 
 * SQL :
   * just like we have ACL and then we can access "Bucket" through url,  we have "add network" where we can specify the VM instance ip which would have access to SQL. Further SQL is accessed through ip address, user name and password. User name and password are usually configured soon after SQL creation. In bucket, you can merely refer to the url, however, in sql you have to make connection through allowed network and with user credentials.
+
+* Containers: decouples the os in which app runs
+* pod: contains one or more related containers
+* kubernetes engine: executes the deployment, scaling, securing the pods
+* kubernetes: manages the container cluster across multiple cloud provider
+
