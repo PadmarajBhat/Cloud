@@ -28,4 +28,9 @@
 * pod: contains one or more related containers
 * kubernetes engine: executes the deployment, scaling, securing the pods
 * kubernetes: manages the container cluster across multiple cloud provider
+* Deployment manager is for infrastructure management for gcp resources
+  * your changes to gcp resources can version controlled through version controlling the yaml with which you created the instance.
+  * you can version control the yaml file in the cloud source repository.
+  * this can be used to replicate the environment for a different project or prod/dev/test environment.
+  * Note that there is version of the app/code here, it is just a infrastructure management.
 
