@@ -35,3 +35,5 @@
   * Note that there is version of the app/code here, it is just a infrastructure management.
 
 * stackdriver can also intake print statement in the application
+
+* Canary deployments are a pattern for rolling out releases to a subset of users or servers. The idea is to first deploy the change to a small subset of servers, test it, and then roll the change out to the rest of the servers. (wiki)
