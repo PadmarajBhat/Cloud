@@ -34,3 +34,4 @@
   * this can be used to replicate the environment for a different project or prod/dev/test environment.
   * Note that there is version of the app/code here, it is just a infrastructure management.
 
+* stackdriver can also intake print statement in the application
