@@ -37,3 +37,6 @@
 * stackdriver can also intake print statement in the application
 
 * Canary deployments are a pattern for rolling out releases to a subset of users or servers. The idea is to first deploy the change to a small subset of servers, test it, and then roll the change out to the rest of the servers. (wiki)
+
+* post testing at development and testing env, jenkins can be used for CI and CID
+ * Jenkins is a free and open source automation server. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery
