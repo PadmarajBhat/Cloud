@@ -44,8 +44,12 @@
 * Datastore is no sql and is queried through GQL (Graph Query Language)
  * "table" which holds record is referred as "Kind"
  * It stores the record as entities of varied length
+ * "columns" are called properties.
  * UI for Datastore gives datasheet like filter options to query.
  * GQL gives SQL like syntax to access the data 
     * SELECT * FROM President 
       * to fetch all entities from President kind.
- 
+ * So what is the difference between SQL and Datastore;
+   * to query that has multiple properties should define composite index to support  multiple values for a property in the query.
+     * ```SELECT * FROM President WHERE year < 2000``` : supported
+     * ```SELECT * FROM President WHERE year < 2000 and lastName = "Bush" ``` : is not supported 
