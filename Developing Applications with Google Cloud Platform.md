@@ -42,6 +42,10 @@
  * Jenkins is a free and open source automation server. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery
 
 * Datastore is no sql and is queried through GQL (Graph Query Language)
+ * "table" which holds record is referred as "Kind"
  * It stores the record as entities of varied length
  * UI for Datastore gives datasheet like filter options to query.
+ * GQL gives SQL like syntax to access the data 
+    * SELECT * FROM President 
+      * to fetch all entities from President kind.
  
