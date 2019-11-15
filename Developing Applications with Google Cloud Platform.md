@@ -56,3 +56,4 @@
      
 * From the Datastore Lab:
   * package.json file is required to execute ```npm install```
+  * the way node js create Datastore connect : ```const ds = Datastore({projectId: config.get('GCLOUD_PROJECT')})```
