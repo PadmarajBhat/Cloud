@@ -53,3 +53,6 @@
    * to query that has multiple properties should define composite index to support  multiple values for a property in the query.
      * ```SELECT * FROM President WHERE year < 2000``` : supported
      * ```SELECT * FROM President WHERE year < 2000 and lastName = "Bush" ``` : is not supported 
+     
+* From the Datastore Lab:
+  * package.json file is required to execute ```npm install```
