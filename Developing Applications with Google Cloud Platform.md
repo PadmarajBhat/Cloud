@@ -61,3 +61,24 @@
                    "start": "node server/app.js"
                   },```
   * the way node js create Datastore connect : ```const ds = Datastore({projectId: config.get('GCLOUD_PROJECT')})```
+  * entity and key declaration : ```const key = ds.key(kind);```
+  * entity key and data declaration : ```const entity = {
+   key,
+// The entity's members are represented in a data property.
+// This is an array where each element represents one
+// member in the entity. Each element is an object with a // name and a value
+   data: [
+     { name: 'quiz', value: quiz },
+     { name: 'author', value: author },
+     { name: 'title', value: title },
+     { name: 'answer1', value: answer1 },
+     { name: 'answer2', value: answer2 },
+     { name: 'answer3', value: answer3 },
+     { name: 'answer4', value: answer4 },
+     { name: 'correctAnswer', value: correctAnswer },
+   ]
+ };```
+ 
+  *   to save the read input : ```return ds.save(entity);```
+  * This would enable a web page to take the data and save it in kind with said key and data.
+
