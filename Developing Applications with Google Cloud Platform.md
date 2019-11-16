@@ -82,3 +82,10 @@
   *   to save the read input : ```return ds.save(entity);```
   * This would enable a web page to take the data and save it in kind with said key and data.
 
+##### Security and Integration Components of Application
+* IAM Roles:
+  * Google account: identifies a user
+  * Google Group: helps in applying policies for multiple google account. Has no email id of its own.
+  * Service Account: associated with application rather to a indivisual
+  * G suite domain: virtual group of all the indivisuals of an organization
+  * Cloud identity domain: virtual group of all the indivisual of an organization but do not have G suite access.
