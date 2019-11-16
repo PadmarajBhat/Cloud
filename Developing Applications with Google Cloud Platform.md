@@ -95,4 +95,8 @@
       * Primitive : roles across project
       * Predefined : roles associated with specific resources
       
+  * Service accounts can have keys which can help in authenticating resources for a resource. 
+  * when a on behalf authentication has to be done, then OAuth is used. Here, user approves the request for a resource access and then post that resource is allocated.
+  * IAP: Identify Aware Proxy: controls the user to cloud application access
+  * Firebase authentication: is an intermediate layer which collects user credentials and authenticates the same with client (google or facebook) then return authentication token and basic info from client. This authentication token can be used for app driven verification.
   
