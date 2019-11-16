@@ -89,3 +89,10 @@
   * Service Account: associated with application rather to a indivisual
   * G suite domain: virtual group of all the indivisuals of an organization
   * Cloud identity domain: virtual group of all the indivisual of an organization but do not have G suite access.
+  
+  * Permission:  which application has what access on which resources
+  * role: is collection of permission. User is given with a role so that set of permissions are allowed to him
+      * Primitive : roles across project
+      * Predefined : roles associated with specific resources
+      
+  
