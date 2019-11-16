@@ -100,3 +100,8 @@
   * IAP: Identify Aware Proxy: controls the user to cloud application access
   * Firebase authentication: is an intermediate layer which collects user credentials and authenticates the same with client (google or facebook) then return authentication token and basic info from client. This authentication token can be used for app driven verification.
   
+  * why does pub/sub changes does not guarantee the order the messages delivered? what I think is
+    * there are VMs to manage the pub sub operations. in the asyncronous communication, there might be chance of failure and back up restoring and more over, there may be difference in the queue due to round robin scheduling or wait due to autoscaling
+    * solution to that is ,  windowing stream for processing. Handle late events through watermark(huerastic to measure late event).
+    * as at least once is guaranteed, application has to take care of duplicate entries if any.
+  
