@@ -110,3 +110,11 @@
    * it supports both grpc and rest based api support
    * open API specification for rest apis and protocol buffer for grpc support
    * api functionality can run on vm, kubernetes cluster or app engine
+
+##### App Deployment, Debugging, and Performance
+* Continuous Integration: Automation of Code, Build, Deploy and Test
+  * Build process gets triggered through the Jenkins which monitor the source repository. It uses container build tools to build the image and stores the artifacts in the container registry. When all the tests are passed, it is then feature branch is merged with master branch.
+  * Spinnamer a deployment system installs the artifacts into cloud.
+* Continuous Deployment: Automation of Code, Build, Deploy, Test, Release and Monitor
+  * Continuous deployment is triggered when code gets checked into master. Where build process builds it and deploys it in the staging area. After all the integration testing, it is marked for release and then deployed in production. There after it can monitored and in case of issues, can be rolled back to previous version.
+
