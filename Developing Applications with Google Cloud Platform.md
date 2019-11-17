@@ -105,3 +105,5 @@
     * solution to that is ,  windowing stream for processing. Handle late events through watermark(huerastic to measure late event).
     * as at least once is guaranteed, application has to take care of duplicate entries if any.
   * cloud functions are even driven. The code to execute can be from zip file in cloud storage. Thus when it autoscales take the standard location to get the code and performs the necessaty actions. This also enables us to configure cloud function perhaps gcloud commands. Any console statement goes to stackdriver and can be viewed with filters (at least timestamp filters). In case of subscribe, how it will scale ?
+
+* Cloud Endpoints :  let you expose the api to the external world. This could have been done through cloud function too but here you have monitoring, versioning and easy deployment APIs
