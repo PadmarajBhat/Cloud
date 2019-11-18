@@ -120,3 +120,4 @@
 * gcloud comput scp : command lets you to copy the local file to vm instance
 * ```require('@google-cloud/debug-agent').start(
      { allowExpressions: true });``` : puts the debugger indication in the code
+* ```npm install --save @google-cloud/debug-agent``` : node js agent for stack driver debugger
