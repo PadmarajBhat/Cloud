@@ -1,4 +1,4 @@
-##### GCP Core Infrastructure:
+#### GCP Core Infrastructure:
 * Resource Hierarchy:
   * Org -> Folder -> Resources
   * Policies at higher level are inherited to lower level.
@@ -82,7 +82,7 @@
   *   to save the read input : ```return ds.save(entity);```
   * This would enable a web page to take the data and save it in kind with said key and data.
 
-##### Security and Integration Components of Application
+#### Security and Integration Components of Application
 * IAM Roles:
   * Google account: identifies a user
   * Google Group: helps in applying policies for multiple google account. Has no email id of its own.
@@ -111,7 +111,7 @@
    * open API specification for rest apis and protocol buffer for grpc support
    * api functionality can run on vm, kubernetes cluster or app engine
 
-##### App Deployment, Debugging, and Performance
+#### App Deployment, Debugging, and Performance
 * Continuous Integration: Automation of Code, Build, Deploy and Test
   * Build process gets triggered through the Jenkins which monitor the source repository. It uses container build tools to build the image and stores the artifacts in the container registry. When all the tests are passed, it is then feature branch is merged with master branch.
   * Spinnamer a deployment system installs the artifacts into cloud.
@@ -121,7 +121,13 @@
 * ```require('@google-cloud/debug-agent').start(
      { allowExpressions: true });``` : puts the debugger indication in the code
 * ```npm install --save @google-cloud/debug-agent``` : node js agent for stack driver debugger
+  * you can open the repository in google shell.
+      * either you have to clone the repository into google shell and then through code editor edit it.
+      * go to the directory from which last git push was done in the google code editor and then start editing.
+      * in either case you should be in directory where code resides.
 * Similarly for error reporting:
   * ```npm install --save @google-cloud/error-reporting```
   * ```const ErrorReporting = require(
        '@google-cloud/error-reporting').ErrorReporting;```
+* Debugging in GCP:
+  
