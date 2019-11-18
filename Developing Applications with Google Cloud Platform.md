@@ -118,3 +118,5 @@
 * Continuous Deployment: Automation of Code, Build, Deploy, Test, Release and Monitor
   * Continuous deployment is triggered when code gets checked into master. Where build process builds it and deploys it in the staging area. After all the integration testing, it is marked for release and then deployed in production. There after it can monitored and in case of issues, can be rolled back to previous version.
 * gcloud comput scp : command lets you to copy the local file to vm instance
+* ```require('@google-cloud/debug-agent').start(
+     { allowExpressions: true });``` : puts the debugger indication in the code
