@@ -130,4 +130,5 @@
   * ```const ErrorReporting = require(
        '@google-cloud/error-reporting').ErrorReporting;```
 * Debugging in GCP:
+    * when you select debugging in GCP, it provides the file browser where you can indicate **snapshot** to be taken. You would click on a line number where you want to see the values of interested variables. Cool think about this is , if n number of times the code passess through it snapshot maintains n history of the same. n variable values can be seen
   
