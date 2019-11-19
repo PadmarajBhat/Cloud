@@ -132,5 +132,15 @@
 * Debugging in GCP:
     * when you select debugging in GCP, it provides the file browser where you can indicate **snapshot** to be taken. You would click on a line number where you want to see the values of interested variables. Cool think about this is , if n number of times the code passess through it snapshot maintains n history of the same. n variable values can be seen
 
-* Logging in GCP
+* Logging in GCP 
    * similar to snapshot, you can indicate a logging statement at a perticular line to print the values of the variable in the console where the app is running. you would view the values in snapshot as well but this is more of printing values in console for browsing through the logs.
+
+* both logging and snapshots are part of debug handler (as indicated above)
+
+* error reporting: once error handler is included, GCP error handling shows interactive way of error details in **error reporting**. 
+   * we can see stack trace
+   * time at which it has happened
+   * count
+   * all through the graph
+   * in the example cloud function was subsribed to "feedback" pubsub topic. feedback submit triggers a publishing event which generates the topic content. This topic is read by a function to provide a nlp processing on the feedback text and puts the prediction to the spanner db. if the topic was not present it would cause an error and logging would indicate resource not found error.
+   * can error trigger an event?  like try catch blocks handling exception, can trigger the pubsub topic and a cloud function can process it ????
