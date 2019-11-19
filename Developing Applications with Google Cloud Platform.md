@@ -131,4 +131,6 @@
        '@google-cloud/error-reporting').ErrorReporting;```
 * Debugging in GCP:
     * when you select debugging in GCP, it provides the file browser where you can indicate **snapshot** to be taken. You would click on a line number where you want to see the values of interested variables. Cool think about this is , if n number of times the code passess through it snapshot maintains n history of the same. n variable values can be seen
-  
+
+* Logging in GCP
+   * similar to snapshot, you can indicate a logging statement at a perticular line to print the values of the variable in the console where the app is running. you would view the values in snapshot as well but this is more of printing values in console for browsing through the logs.
