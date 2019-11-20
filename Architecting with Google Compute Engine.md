@@ -9,6 +9,9 @@
             * network > subnetwork > IP addresses
             
   * if resources are under same network, the resources can interact with each other with internal ip addresses even if the resources are in different region. On the contrary, if the resources are different network but are geographically in same region , both have to communicate with each other with external ip addresses. Here, the interation do not go out to internet but get routed through gcp edge routers (which has different pricing). 
+  * every resources have 2 ip address: internal and external address.
+      * internal : all the resources gets their ip from DHCP when they register with the internal DNS.
+      * DNS can translate host and url names in the same network and not the different network.
   
          
   
