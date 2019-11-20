@@ -144,3 +144,7 @@
    * all through the graph
    * in the example cloud function was subsribed to "feedback" pubsub topic. feedback submit triggers a publishing event which generates the topic content. This topic is read by a function to provide a nlp processing on the feedback text and puts the prediction to the spanner db. if the topic was not present it would cause an error and logging would indicate resource not found error.
    * can error trigger an event?  like try catch blocks handling exception, can trigger the pubsub topic and a cloud function can process it ????
+   
+   
+* Marketplace:  like anaconda related software and hardware are prent so that quickly we can start developing on it.
+  * we can also create vm and install software manually or startup script but this would be time consuming. Here the *compatible* and *fast* deployment happens.
