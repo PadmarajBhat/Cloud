@@ -148,3 +148,5 @@
    
 * Marketplace:  like anaconda related software and hardware are prent so that quickly we can start developing on it.
   * we can also create vm and install software manually or startup script but this would be time consuming. Here the *compatible* and *fast* deployment happens.
+  
+* VPC: It enables to connect and/or isolate the cloud resources. components of VPC : project networks, subnetworks, ip address range, 
