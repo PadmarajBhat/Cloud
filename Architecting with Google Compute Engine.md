@@ -13,6 +13,7 @@
       * internal : all the resources gets their ip from DHCP when they register with the internal DNS.
       * DNS can translate host and url names in the same network and not the different network.
       * external : ip addresses can be taken out of pool making it ephermal or it can be reserved ip address making it static
+      * cloud DNS : helps to host and map dns mappings. It has 100% availability.
   
          
   
