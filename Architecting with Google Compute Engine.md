@@ -102,3 +102,9 @@
         * no a parallel vm is created in the same network and has external ip. Connect to this bastion host through ssh and then connect to the first vm instance through ssh. Since both vm are in same network, ssh between vm and bastion vm is allowed.
         
 * IAM : a person can be given only storage view access with which no other resources are available for viewing.
+
+* Bucket can have following security features:
+  * Cloud IAM
+  * ACLs
+  * signed url
+  * signed policy document
