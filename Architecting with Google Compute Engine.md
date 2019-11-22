@@ -100,3 +100,5 @@
      * inter connectivity between the resource in the same network is exploited in bastion host concept.
         * here external ip is taken out and hence it is no longer access through internet even if the http connection is enabled while creating the VM instance where a web browser is hosted
         * no a parallel vm is created in the same network and has external ip. Connect to this bastion host through ssh and then connect to the first vm instance through ssh. Since both vm are in same network, ssh between vm and bastion vm is allowed.
+        
+* IAM : a person can be given only storage view access with which no other resources are available for viewing.
