@@ -108,3 +108,11 @@
   * ACLs : user to action mapping
   * signed url : time restricted access
   * signed policy document: defines the items that allowed for signed url
+
+# Elastic Cloud Infrastructure: Scaling and Automation
+* External IP Addresses can be consolidatedly viewed at VPC -> external ip addresses
+* In the VPN lab: ( VPN gateways + tunnels)
+   * static ip address given to respective network of VMs. Now the network has internal, ephermal and static ip address !!!!
+     *  Static ip address, kind of hides the external and internal ip address of VM instances
+   * tunnel is created along with when VPN is created.
+      * VPN indicates the remote network range
