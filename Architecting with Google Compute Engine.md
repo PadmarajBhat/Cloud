@@ -104,7 +104,7 @@
 * IAM : a person can be given only storage view access with which no other resources are available for viewing.
 
 * Bucket can have following security features:
-  * Cloud IAM
-  * ACLs
-  * signed url
-  * signed policy document
+  * Cloud IAM: roles defining the actions
+  * ACLs : user to action mapping
+  * signed url : time restricted access
+  * signed policy document: defines the items that allowed for signed url
