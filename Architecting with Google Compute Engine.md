@@ -120,3 +120,5 @@
    * in the lab 2 instance groups were created at different group regions. both these groups were of same disk images. The disk image was customized to have the apache2 installed and start at boot configuration.
    * creating image does not mean that the services will be autostared but in this example it was configured to auto run. In custom application it should be startup script perhaps to load the environment variables and then start the respective applications in the same order.
    * instance group lets us autoscale instances based on cpu utilization or request per second. **ab** is the tool used to test the autoscale performance.
+   * https load balancing can work on both ipv4 and ipv6. This ip is what being called to in the browser which actually encapsulates instance group from external work. does that mean it is a static ip ?
+   * in the lab session us-west1-c zone was used and hence it was expected that first load would go to instances at us-central1 region( and hence its zones instances). what if the test host was at us-central1-c, would it route first transaction to us-centra1-c instance in the group ? can HTTP load balances at zone level ?
