@@ -118,3 +118,4 @@
       * VPN indicates the remote network range
 * HTTP Load balancing routes the traffic nearer to the user request region.
    * in the lab 2 instance groups were created at different group regions. both these groups were of same disk images. The disk image was customized to have the apache2 installed and start at boot configuration.
+   * creating image does not mean that the services will be autostared but in this example it was configured to auto run. In custom application it should be startup script perhaps to load the environment variables and then start the respective applications in the same order.
