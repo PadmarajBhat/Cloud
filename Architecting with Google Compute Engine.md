@@ -125,3 +125,7 @@
    
    * Internal routing between subnets spread across 2 zones.
      * 2 zones are selected for 2 subnetworks. Now the task is to route the request between them.
+     * there are set of instances in each subnet which can scale upto 5 with the cpu utilization as trigger. In our manual testing case there were no additional instances created. 
+        * is it good config?
+            * it would only scale up only if n-2 request is still keeping the cpu busy. n being current request and n-1 would go to other instance group.
+            * it might not be a good scaling condition for now but can always be good combination to flip arround by keeping the 2 region equally occupied.
