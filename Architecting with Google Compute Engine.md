@@ -138,3 +138,7 @@
                   * 2nd firewall may be invoked when there is health check from those ips.
               * if there were only 1 firewall then it would have been invoked for all the health checks. 
                 * would this mean that health check requests will be queued along with other requests in the firewall ?
+                
+         * health check enables the load balancer to determine if one zone is slow in response or not. However, in our case, CPU should not be busy and health check should always succeed. 
+            * Then why does the load balancer toggle between 2 instance groups ? 
+            * If there was one more instance group, would load balancer choose round robin fashion to route?
