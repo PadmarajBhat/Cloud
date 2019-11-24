@@ -129,3 +129,12 @@
         * is it good config?
             * it would only scale up only if n-2 request is still keeping the cpu busy. n being current request and n-1 would go to other instance group.
             * it might not be a good scaling condition for now but can always be good combination to flip arround by keeping the 2 region equally occupied.
+     * we have configured 2 firewalls almost with same setting.
+        * 1 firewall rule indicates it can recieve TCP/80 request to custom network from anywhere (0.0.0.0/0)
+        * 2nd firewall indicates it can recieve TCP/any port  request to custom network from 2 instances ip range.
+            * isnt it that 2nd firewall is the subset of 1st ? Later in the same lab we create health check with tcp/80 to configure load balancer.
+            * can we see firewall invocation ? as in to see if the http request got approved through which firewall?
+              * I suspect that since we have 2 firewalls  
+                  * 2nd firewall may be invoked when there is health check from those ips.
+              * if there were only 1 firewall then it would have been invoked for all the health checks. 
+                * would this mean that health check requests will be queued along with other requests in the firewall ?
