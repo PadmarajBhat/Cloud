@@ -122,3 +122,6 @@
    * instance group lets us autoscale instances based on cpu utilization or request per second. **ab** is the tool used to test the autoscale performance.
    * https load balancing can work on both ipv4 and ipv6. This ip is what being called to in the browser which actually encapsulates instance group from external work. does that mean it is a static ip ?
    * in the lab session us-west1-c zone was used and hence it was expected that first load would go to instances at us-central1 region( and hence its zones instances). what if the test host was at us-central1-c, would it route first transaction to us-centra1-c instance in the group ? can HTTP load balances at zone level ?
+   
+   * Internal routing between subnets spread across 2 zones.
+     * 2 zones are selected for 2 subnetworks. Now the task is to route the request between them.
