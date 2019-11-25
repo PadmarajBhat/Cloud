@@ -142,3 +142,10 @@
          * health check enables the load balancer to determine if one zone is slow in response or not. However, in our case, CPU should not be busy and health check should always succeed. 
             * Then why does the load balancer toggle between 2 instance groups ? 
             * If there was one more instance group, would load balancer choose round robin fashion to route?
+            
+            
+# Reliable Cloud Infrastructure: Design and Process
+* Stateless micro services are the best design
+  * can easily migratable and scalable.
+  * avoids the issues with managing states
+  * can be easily integrated with other application as they are usually reusable components.
