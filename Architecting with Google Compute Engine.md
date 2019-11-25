@@ -153,4 +153,4 @@
  * However, when it is absolutely necessary then we may save the state
     * in frontend: but this may overload a frontend due to load balancer routing the transaction to first available free frontend.
        * now, we can move this state management to backend server. This would require us to maintain a cache which all front end would refer to. But in this case, cache might be stale because of the delay in the write cache by the backend server. Contacting backend for the state may be a costly(time consuming / frequent operation can cause network congestion) a operation.
-    
+    * for a backend to hold all the state may cause unavailability/down time issues. For which we can use Map services which actually maps to shared state handling backend servers. Since there are multiple backend servers to avoid the single point failure, we should have the replication among them.
