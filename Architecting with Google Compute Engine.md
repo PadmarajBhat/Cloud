@@ -159,3 +159,8 @@
      * SLI : Service Level Indicator : identifies the items that determines the strengths of the service. It is measurable entities like availability or performance.
      * SLO : Service Level Objective : identifies the value to the customer through SLI
      * SLA : Service Level Agreement : is the penalty criteria if SLO is not met. SLA is optional for a service but a service must have SLO (and hence SLI).
+     
+     * Qualitative Requirements:asking questions to determine SLO : why? who ? what ? when ?
+     * Quantitative Requirements: 
+         * resources: Time , People and Finance
+         * Constraints: Time , Data, users 
