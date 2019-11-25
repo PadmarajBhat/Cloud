@@ -149,3 +149,7 @@
   * can easily migratable and scalable.
   * avoids the issues with managing states
   * can be easily integrated with other application as they are usually reusable components.
+  
+ * However, when it is absolutely necessary then we may save the state
+    * in frontend: but this may overload a frontend due to load balancer routing the transaction to first available free frontend
+    
