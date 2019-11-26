@@ -172,3 +172,5 @@
   * gcloud commands and code editor helps us to build the components the yaml type or property values. e.g:
     ```gcloud deployment-manager types list | grep v1.*instance```
     ```gcloud compute machine-types list | grep [YOUR_ZONE]```
+    
+* Business - Logic layer: Moving away from monolithic model and moving towards micro services development.
