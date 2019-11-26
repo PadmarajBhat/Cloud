@@ -166,3 +166,9 @@
          * Constraints: Time , Data, users 
    * diff between deployment mgr and script with gcloud command
      * deployment manager can delete all the instances in the deletion of deployment mgr instance where as in script based resource creation requires a seperate script to delete resources.
+* yaml syntax:
+  * - to indicate list
+  * basically a key and value pair seperated by ":" and can be nested too.
+  * gcloud commands and code editor helps us to build the components the yaml type or property values. e.g:
+    ```gcloud deployment-manager types list | grep v1.*instance```
+    ```gcloud compute machine-types list | grep [YOUR_ZONE]```
