@@ -164,3 +164,5 @@
      * Quantitative Requirements: 
          * resources: Time , People and Finance
          * Constraints: Time , Data, users 
+   * diff between deployment mgr and script with gcloud command
+     * deployment manager can delete all the instances in the deletion of deployment mgr instance where as in script based resource creation requires a seperate script to delete resources.
