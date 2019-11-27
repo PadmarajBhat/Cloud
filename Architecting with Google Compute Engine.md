@@ -187,5 +187,10 @@
            * yaml is about key value pair and jinja is all about creating the programmatic way customizing the cloud resource attributes.
         * deployed it through deployment manager and tested the app.
         
-        
+        * Quiz notes:
+           * microservices are good but it also increases the cross connections between micro services
+           * Google storage and meta data server helps us in 12 factor principles
+           * Kubernetes gives us the flexibility to deploy and scale but App engine even higher abstraction from the system overhead
+           * vertical scaling is all about increasing the size but single instance and horizontal scaling is about same size but more than one instance.
+
    
