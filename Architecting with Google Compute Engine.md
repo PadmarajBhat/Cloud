@@ -192,5 +192,6 @@
            * Google storage and meta data server helps us in 12 factor principles
            * Kubernetes gives us the flexibility to deploy and scale but App engine even higher abstraction from the system overhead
            * vertical scaling is all about increasing the size but single instance and horizontal scaling is about same size but more than one instance.
-
+           * Dimensions : CPU, Memory, cache, type of storage
+                * Now these has to be kept aside when we are designing because it would over time and also contraint design.
    
