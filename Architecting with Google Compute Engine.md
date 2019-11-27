@@ -174,3 +174,18 @@
     ```gcloud compute machine-types list | grep [YOUR_ZONE]```
     
 * Business - Logic layer: Moving away from monolithic model and moving towards micro services development.
+     - compute engine, kubernetes, app engine can be leverage if the design is micro service oriented.
+     * Lab:
+        * we created a python application to echo the host name.
+        * made it a flask app
+        * created setup.py file for packaging the app which includes dependencies
+        * created a source distribution (tz file) through the setup.py file
+        * tested the same on a sample vm machine 
+        * created a jinja template 
+        * created a jinja schema explaining the field attributes.
+        * created a yaml file which imports jinja
+           * yaml is about key value pair and jinja is all about creating the programmatic way customizing the cloud resource attributes.
+        * deployed it through deployment manager and tested the app.
+        
+        
+   
