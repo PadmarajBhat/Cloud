@@ -207,4 +207,6 @@
     * Pass through load balancer redirects the traffic without terminating connection.
     * internal routing helps to load balance between the internal ip addresses within VPC.
     * dedicated interconnect: let us third party to interconnect with gcp resources to form hybrid cloud.
+    * co related failure: failure due to loss : one server fails all requests fails
+    * cascading failure: failure due to overload : chain of failure - one front end failure over burden others and they start to fail.
     
