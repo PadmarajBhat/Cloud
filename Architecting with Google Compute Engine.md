@@ -205,4 +205,6 @@
 * Quiz: 
     * Proxy load balancer terminates the incoming connection and initiates the new connection.
     * Pass through load balancer redirects the traffic without terminating connection.
+    * internal routing helps to load balance between the internal ip addresses within VPC.
+    * dedicated interconnect: let us third party to interconnect with gcp resources to form hybrid cloud.
     
