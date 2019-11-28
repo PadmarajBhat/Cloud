@@ -210,3 +210,7 @@
     * co related failure: failure due to loss : one server fails all requests fails
     * cascading failure: failure due to overload : chain of failure - one front end failure over burden others and they start to fail.
     
+* Teraform:
+  * json like structure; not strict on indentation but requires paranthesis for scoping.
+  * dependencies are auto detected through the names
+  
