@@ -201,3 +201,8 @@
            * echo : has the "echo" app files 
               * __init__.py : main file which has imports from other files
               * xyz.py: definens the functionalities to be included in the main program 
+              
+* Quiz: 
+    * Proxy load balancer terminates the incoming connection and initiates the new connection.
+    * Pass through load balancer redirects the traffic without terminating connection.
+    
