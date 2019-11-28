@@ -194,4 +194,10 @@
            * vertical scaling is all about increasing the size but single instance and horizontal scaling is about same size but more than one instance.
            * Dimensions : CPU, Memory, cache, type of storage
                 * Now these has to be kept aside when we are designing because it would over time and also contraint design.
-   
+     * Folder Structure for the python app:
+       * echolb
+         * deployment_mnager_eg : has yaml and jinja file
+         * echo : has license and setup.py file
+           * echo : has the "echo" app files 
+              * __init__.py : main file which has imports from other files
+              * xyz.py: definens the functionalities to be included in the main program 
