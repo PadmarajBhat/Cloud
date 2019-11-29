@@ -213,4 +213,6 @@
 * Teraform:
   * json like structure; not strict on indentation but requires paranthesis for scoping.
   * dependencies are auto detected through the names
+  * each resources are categorized into to folder and resource template can accept parameter set the attributes
+  * sort of combines yaml and jinja
   
