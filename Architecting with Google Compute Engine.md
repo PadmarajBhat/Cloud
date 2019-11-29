@@ -210,9 +210,11 @@
     * co related failure: failure due to loss : one server fails all requests fails
     * cascading failure: failure due to overload : chain of failure - one front end failure over burden others and they start to fail.
     
-* Teraform:
+* Terraform:
   * json like structure; not strict on indentation but requires paranthesis for scoping.
   * dependencies are auto detected through the names
   * each resources are categorized into to folder and resource template can accept parameter set the attributes
   * sort of combines yaml and jinja
+  * terraform is a open source tool and it works with AWS too
+  * there exists terraform UI which lets you browse through the terraform code and buttons to initiate its commands
   
