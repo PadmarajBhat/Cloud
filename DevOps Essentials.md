@@ -15,3 +15,9 @@
                      * Here the service reference (points to) v2.
                      
                
+### Deploy Kubernetes Load Balancer Service with Terraform
+* there are 2 terraforms used in the lab
+   * both have 
+      * provider:
+      * resource:
+      * output:
