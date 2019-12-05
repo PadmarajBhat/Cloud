@@ -19,7 +19,8 @@
 * there are 2 terraforms used in the lab
    * both have 
       * provider: A provider is responsible for understanding API interactions and exposing resources. https://www.terraform.io/docs/providers/kubernetes/index.html
-      * resource: 
+      * resource: Each resource block indicates the infrastructural components like instance group , DNS, virtual network etc
+         * https://www.terraform.io/docs/configuration/resources.html
       * output:   https://www.terraform.io/docs/commands/output.html
          ```
          $terraform output
@@ -32,3 +33,5 @@
          $ terraform output cluster_name
          tf-gke-k8s
          ```
+       * variable: which can be used within the scope of tf file.
+       * data : to operate on variables and then save the output on a variable.
