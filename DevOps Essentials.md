@@ -20,4 +20,15 @@
    * both have 
       * provider: A provider is responsible for understanding API interactions and exposing resources. https://www.terraform.io/docs/providers/kubernetes/index.html
       * resource: 
-      * output:
+      * output:   https://www.terraform.io/docs/commands/output.html
+         ```
+         $terraform output
+         cluster_name = tf-gke-k8s
+         cluster_region = us-west1
+         cluster_zone = us-west1-b
+         load-balancer-ip = 35.203.128.46
+         network = https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-00-bda415ee9725/global/networks/tf-gke-k8s
+         subnetwork_name = tf-gke-k8s
+         $ terraform output cluster_name
+         tf-gke-k8s
+         ```
