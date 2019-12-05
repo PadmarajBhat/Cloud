@@ -18,6 +18,6 @@
 ### Deploy Kubernetes Load Balancer Service with Terraform
 * there are 2 terraforms used in the lab
    * both have 
-      * provider:
-      * resource:
+      * provider: A provider is responsible for understanding API interactions and exposing resources. https://www.terraform.io/docs/providers/kubernetes/index.html
+      * resource: 
       * output:
