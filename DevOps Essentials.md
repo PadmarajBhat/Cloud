@@ -45,3 +45,7 @@
    * durability : likelihood that data will be retained for a long period of time.
    
 * Alert policy is created then we can see the incidents where the alert policy condition is met. When we open the incident, you have an option to *acknowledge* the incident so that further escalation would not occur. This may be handy in collecting enough evidences on the issue and stopping it post that. Incidents are auto resolved when threshold does not reach for the observed period.
+
+* Profiler : gives the flame graph of randomly sampled snapshots
+   * x axis is the consumed metric
+   * y axis indicates the parent child relationship of the functions.
