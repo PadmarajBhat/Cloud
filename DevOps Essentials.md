@@ -35,3 +35,6 @@
          ```
        * variable: which can be used within the scope of tf file.
        * data : to operate on variables and then save the output on a variable.
+       
+# Site Reliability Troubleshooting with Stackdriver APM
+* skaffold : manages the workflow for kubernetes application and functionality for testing locally. This enables us to test code and ( kubernetes yaml + Dockerfile + project descriptor file) in local machine.
