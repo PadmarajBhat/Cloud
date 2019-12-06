@@ -38,3 +38,8 @@
        
 # Site Reliability Troubleshooting with Stackdriver APM
 * skaffold : manages the workflow for kubernetes application and functionality for testing locally. This enables us to test code and ( kubernetes yaml + Dockerfile + project descriptor file) in local machine.
+* SLI focus : 
+   * request latency : time take for the recieve the response to a request
+   * error rate: fractional request recieved
+   * system throughput: requests / second
+   * durability : likelihood that data will be retained for a long period of time.
