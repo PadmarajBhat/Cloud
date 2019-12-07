@@ -63,3 +63,4 @@
       * there are easier monitoring and rollback scripts available.
       * Kubernetes was dependent on Jenkins for custom builds however spinnaker uses the cloud resources effectively.
       * spinnaker has something called as **Immutable Infrastructure** which manages the versioning of all the configuration files so the things do not break during roll back. Thus claims safer deployment through spinnaker.        
+* In the lab **Helm** is used to deploy spinnaker for kubernetes. Helm is a package manager for kubernetes application. 
