@@ -49,3 +49,11 @@
 * Profiler : gives the flame graph of randomly sampled snapshots
    * x axis is the consumed metric
    * y axis indicates the parent child relationship of the functions.
+
+
+# Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine
+* Now the lab could not be worked upon because there was a missing step; However, there are some lessons to be noted.
+* Before we dive in there is an alternate lab for jenkins then what is the difference between jenkins and spinnaker
+   * https://www.spinnakersummit.com/blog/spinnaker-vs-jenkins-for-continuous-delivery. Note that the post is an year old not sure if it is still true. Key points:
+      * Spinnaker is focussed on cloud deployment where jenkins is not
+      * Spinnaker does have dependency on jenkins( or alike) for build server capability.
