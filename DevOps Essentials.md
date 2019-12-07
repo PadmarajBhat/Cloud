@@ -64,3 +64,17 @@
       * Kubernetes was dependent on Jenkins for custom builds however spinnaker uses the cloud resources effectively.
       * spinnaker has something called as **Immutable Infrastructure** which manages the versioning of all the configuration files so the things do not break during roll back. Thus claims safer deployment through spinnaker.        
 * In the lab **Helm** is used to deploy spinnaker for kubernetes. Helm is a package manager for kubernetes application. 
+   * https://hackernoon.com/what-is-helm-and-why-you-should-love-it-74bf3d0aafc indicates clearly why would we need helm.
+         * when we need to have large set of micro services scaling indivisual service may be cumbersome and helm using chart. 
+   * https://boxboat.com/2018/09/19/helm-and-kubernetes-deployments/
+      * A Helm chart is simply a collection of YAML template files organized into a specific directory structure. 
+      ```
+      ~>tree demo-chart/
+         demo-chart/
+         ├── Chart.yaml
+         ├── templates
+         │   ├── deployment.yaml
+         │   ├── rbac.yaml
+         │   └── service.yaml
+         └── values.yaml
+      ```
