@@ -56,4 +56,10 @@
 * Before we dive in there is an alternate lab for jenkins then what is the difference between jenkins and spinnaker
    * https://www.spinnakersummit.com/blog/spinnaker-vs-jenkins-for-continuous-delivery. Note that the post is an year old not sure if it is still true. Key points:
       * Spinnaker is focussed on cloud deployment where jenkins is not
-      * Spinnaker does have dependency on jenkins( or alike) for build server capability.
+      * Spinnaker does have dependency on jenkins( or alike) for build server capability. Hence,  either of them cannot replace other.
+* So what about spinnaker vs kubernetes:
+   : https://www.spinnakersummit.com/blog/why-spinnaker-and-kubernetes-work-better-together-for-continuous-delivery
+      * Here also it is said that both work together better
+      * there are easier monitoring and rollback scripts available.
+      * Kubernetes was dependent on Jenkins for custom builds however spinnaker uses the cloud resources effectively.
+      * spinnaker has something called as **Immutable Infrastructure** which manages the versioning of all the configuration files so the things do not break during roll back. Thus claims safer deployment through spinnaker.        
