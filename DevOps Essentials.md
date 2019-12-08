@@ -88,3 +88,8 @@
    * architecture indicates how the external user interacts with jenkins
       * cluster does not only have the kubernetes engine but also the jenkins software installed in them
       * there is jenkins master and executor pods in the each of kubernetes node.
+      * need to go through https://cloud.google.com/solutions/jenkins-on-kubernetes-engine in detail.
+         * in search of answer to the questions:
+            * where does the jenkins discover services run ?
+            * where does the jenkins UI run ?
+            * what is jenkins persistent disk ? where does it decide ? does it require dedicated distinct compute engine ?
