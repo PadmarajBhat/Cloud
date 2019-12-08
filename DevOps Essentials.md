@@ -84,3 +84,7 @@
    * this focusses on creatin gthe Jenkinsfile which has steps to create docker image file 
       * few syntax of Jenkins file syntax which are either python or javascript friendly were noted.
       
+* went through https://github.com/GoogleCloudPlatform/continuous-deployment-on-kubernetes (git repository used in qwiklabs)
+   * architecture indicates how the external user interacts with jenkins
+      * cluster does not only have the kubernetes engine but also the jenkins software installed in them
+      * there is jenkins master and executor pods in the each of kubernetes node.
