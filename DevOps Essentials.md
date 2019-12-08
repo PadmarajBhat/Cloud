@@ -80,3 +80,7 @@
       ```
 # Continuous Delivery with Jenkins in Kubernetes Engine
 * Self studying on the jenkins on k8s because git repository used in lab indicates that build with error 
+* Went through the video : https://www.youtube.com/watch?v=dUr1s9qTQlk
+   * this focusses on creatin gthe Jenkinsfile which has steps to create docker image file 
+      * few syntax of Jenkins file syntax which are either python or javascript friendly were noted.
+      
