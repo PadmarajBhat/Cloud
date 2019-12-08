@@ -78,3 +78,5 @@
          │   └── service.yaml
          └── values.yaml
       ```
+# Continuous Delivery with Jenkins in Kubernetes Engine
+* Self studying on the jenkins on k8s because git repository used in lab indicates that build with error 
