@@ -98,4 +98,12 @@
          * https://www.youtube.com/watch?v=IDoRWieTcMc video summarizes lot of what the lab does.
             * Jenkins for CI and spinnaker for CD
             * Helm for package manager for k8s
+            * Jenkins pipeline for deployment : 
+               * build image
+               * create new deployment (changing the yaml file for the change in the version)
+               * verify deployment (check for *sustained* healthy pods)
+               * switch to new deployment (it can be blue-green or rolling update or canary)
+               * verify the new deployment
+               * delete the old deployment
+               
             
