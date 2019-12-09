@@ -105,5 +105,8 @@
                * switch to new deployment (it can be blue-green or rolling update or canary)
                * verify the new deployment
                * delete the old deployment
-               
+         * K8s default deployment is rolling update where old pods will be automatically delete when newer ones are installed.
+            * maxSurge: what is the maximum number of pods to be in the system.
+            * maxUnavailable: what is the max number of deletion of pods when deleting it.
+            * terminationGracePeriodSeconds: indicates the duration to which it has to wait for the deletion of pods for graceful completion of executing request. A signal is sent to an app which actually needs to be handled by application for closure of connection and wrapping up activities
             
