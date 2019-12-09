@@ -109,4 +109,5 @@
             * maxSurge: what is the maximum number of pods to be in the system.
             * maxUnavailable: what is the max number of deletion of pods when deleting it.
             * terminationGracePeriodSeconds: indicates the duration to which it has to wait for the deletion of pods for graceful completion of executing request. A signal is sent to an app which actually needs to be handled by application for closure of connection and wrapping up activities
-            
+         * readiness check and health check make the deployment healthy:
+            * readiness need not be limited to response to dummy http request, it can be check to availability of the data / db which might be required for the successful response.
