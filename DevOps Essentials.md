@@ -95,3 +95,7 @@
             * what is jenkins persistent disk ? where does it decide ? does it require dedicated distinct compute engine ?
             
          * K8s provide a ephemeral build executor which helps in clean build of deployment ( this includes code repository pull and containerization)
+         * https://www.youtube.com/watch?v=IDoRWieTcMc video summarizes lot of what the lab does.
+            * Jenkins for CI and spinnaker for CD
+            * Helm for package manager for k8s
+            
