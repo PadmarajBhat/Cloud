@@ -13,3 +13,6 @@
     * filters can be put per product or SKU (stock keeping unit) to understand what actually cnsumes the bigger pie in the billing
     * multi-region project can also put filters to region wise expenditure trend
     * duration can also be there to see the year/month/date range expenditure.
+  * In the lab Analyzing Billing Data with BigQuery :
+    * the billing data can be exported for bigquery analysis. why ? because unlike anyother storage in GCP, it does not require any dedicated storage set up as in db or schema etc. and SQL querying can ease up analysis. Further more Jupyter notebook can fetch the big query output to dataframe.
+    * key fields look for are Line item, cost, project name, 
