@@ -15,4 +15,9 @@
     * duration can also be there to see the year/month/date range expenditure.
   * In the lab Analyzing Billing Data with BigQuery :
     * the billing data can be exported for bigquery analysis. why ? because unlike anyother storage in GCP, it does not require any dedicated storage set up as in db or schema etc. and SQL querying can ease up analysis. Further more Jupyter notebook can fetch the big query output to dataframe.
-    * key fields look for are Line item, cost, project name, 
+    * key fields look for are Line item, cost, project name, etc
+    
+* In the lab, Visualizing Billing Data with Data Studio :
+  * the lab focussed on pie chart and hence only metric was changed to num which represeted the total number of entries per line item
+  * then I had to select the pie chart from the chart type
+  * there was one cruicial thing, that was sorting. Well, from the concept wise it was not a big deal but the auto changes of the pie chart based on ascending or descending sort was something new.
