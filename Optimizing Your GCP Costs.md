@@ -21,3 +21,9 @@
   * the lab focussed on pie chart and hence only metric was changed to num which represeted the total number of entries per line item
   * then I had to select the pie chart from the chart type
   * there was one cruicial thing, that was sorting. Well, from the concept wise it was not a big deal but the auto changes of the pie chart based on ascending or descending sort was something new.
+
+* In the lab, Examining BigQuery Billing Data in Google Sheets:
+ * they talked about connecting to big query through sheets and query editor in sheets decides the sheet data content.
+ * the edit to query refreshes the data in the sheet
+ * sheet has to be periodically refreshed if the underlying source changes which can be automated through macro and script editor.
+ * fantastic thing was to use **explore** where NLP driven query processor resulting in data output. It could understand the simple english query to create pivot or bar charts. of course, charts and pivot can later be edited. 
