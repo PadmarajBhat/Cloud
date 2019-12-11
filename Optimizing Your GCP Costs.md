@@ -33,3 +33,7 @@
 * Setting up budgets and alerts for cost management:
   * An alert can be set for either number of resources or rate of usage (like api access)
   * alert can be put on actual or forecasted ( it might alert way ahead of actual consumption )
+  * budget can be set for overall project or indivisual components.
+  
+* Setting Up Cost Controls with Quota:
+  * Quota can restrict the users from allocating resources which helps in controlling the budget
