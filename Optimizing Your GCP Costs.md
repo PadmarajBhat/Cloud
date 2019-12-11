@@ -27,3 +27,9 @@
  * the edit to query refreshes the data in the sheet
  * sheet has to be periodically refreshed if the underlying source changes which can be automated through macro and script editor.
  * fantastic thing was to use **explore** where NLP driven query processor resulting in data output. It could understand the simple english query to create pivot or bar charts. of course, charts and pivot can later be edited. 
+
+
+# Optimizing Your GCP Costs
+* Setting up budgets and alerts for cost management:
+  * An alert can be set for either number of resources or rate of usage (like api access)
+  * alert can be put on actual or forecasted ( it might alert way ahead of actual consumption )
