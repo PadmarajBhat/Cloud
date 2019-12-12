@@ -37,3 +37,4 @@
   
 * Setting Up Cost Controls with Quota:
   * Quota can restrict the users from allocating resources which helps in controlling the budget
+  * User has to have product owner previlage to set up quotas
