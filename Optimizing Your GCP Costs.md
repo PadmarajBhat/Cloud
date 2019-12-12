@@ -39,3 +39,4 @@
   * Quota can restrict the users from allocating resources which helps in controlling the budget
   * User has to have product owner previlage to set up quotas
   * Quotas not only help to control billing but also control unintentional access of resources like test system accessing too many big query resources.
+  * Big query has fine grain control over its feature like streaming and data volume etc. So idea here is to constantly review billing report and fine tune quotas as per budget constraints
