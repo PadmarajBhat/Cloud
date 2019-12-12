@@ -38,3 +38,4 @@
 * Setting Up Cost Controls with Quota:
   * Quota can restrict the users from allocating resources which helps in controlling the budget
   * User has to have product owner previlage to set up quotas
+  * Quotas not only help to control billing but also control unintentional access of resources like test system accessing too many big query resources.
