@@ -45,3 +45,7 @@
   * this has to be purchased before use of the resource to avail the discount. Irrespective of usage of the resource, a discounted rate will be part of the monthly bill
   * by reviewing the CUD report we can decide if further committed resources has to be purchased. 
   * it differs from the sustained usage discount with the fact that it is post usage discount where cud is pre purchased.
+  
+* Setting up advanced cost control:
+  * pubsub can be used in the budget creation to have the programmatic notification to stop the resources as an example. May be later technical and IT team can investigate the extreme use.
+  * cloud function for the quick and serverless code execution. Since both pubsub and functions are only trigger based their consumption is negligible when it comes to overall compute engine consumption.
