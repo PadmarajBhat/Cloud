@@ -49,3 +49,6 @@
 * Setting up advanced cost control:
   * pubsub can be used in the budget creation to have the programmatic notification to stop the resources as an example. May be later technical and IT team can investigate the extreme use.
   * cloud function for the quick and serverless code execution. Since both pubsub and functions are only trigger based their consumption is negligible when it comes to overall compute engine consumption.
+  * budget can be set on billing account that encompasses multiple projects and products.
+  * set different quotas for dev, test and production with constant monitoring over resources.
+  * perday limit resets everyday
