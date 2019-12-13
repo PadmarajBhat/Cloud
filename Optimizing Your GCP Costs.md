@@ -52,3 +52,7 @@
   * budget can be set on billing account that encompasses multiple projects and products.
   * set different quotas for dev, test and production with constant monitoring over resources.
   * perday limit resets everyday
+
+* popular stacks:
+   * MEAN : Mongodb, express.js, Angular.js and node.js
+   * LAMP: Linux, Apache, mysql and PHP
