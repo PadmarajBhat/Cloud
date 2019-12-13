@@ -40,3 +40,8 @@
   * User has to have product owner previlage to set up quotas
   * Quotas not only help to control billing but also control unintentional access of resources like test system accessing too many big query resources.
   * Big query has fine grain control over its feature like streaming and data volume etc. So idea here is to constantly review billing report and fine tune quotas as per budget constraints
+* Committed use discounts:
+  * committment from resources creator for a longer term like 1 or 3 years usage. There can be significant discount in this case.
+  * this has to be purchased before use of the resource to avail the discount. Irrespective of usage of the resource, a discounted rate will be part of the monthly bill
+  * by reviewing the CUD report we can decide if further committed resources has to be purchased. 
+  * it differs from the sustained usage discount with the fact that it is post usage discount where cud is pre purchased.
