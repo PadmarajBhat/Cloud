@@ -61,3 +61,9 @@
   * Big query execution indicates that the data consumption is over a TB
   * second run of the same sql query was fetched from cache
   * on setting the quota for perday usage size the big query execution failed giving quota warning. Note that in this case cache was explicitly disabled so that query re-fetches the data.  
+  
+* Lab 2:
+  * Stack driver helps to monitor various metrics depending on the resource types. email notification can be sent on the basis of alert.
+  * can it raise a pubsub topic ? 
+  * new thing was uptime check for a resource. this may be suitable for system rarely used but the much needed whenever required. so you would want to keep uptime check and requests/response or any other alerts
+  
