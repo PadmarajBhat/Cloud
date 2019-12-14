@@ -67,3 +67,10 @@
   * can it raise a pubsub topic ? 
   * new thing was uptime check for a resource. this may be suitable for system rarely used but the much needed whenever required. so you would want to keep uptime check and requests/response or any other alerts
   
+* Lab 3:
+  * Cloud function to listen to a topic in pubsub.
+  * function code simply reads the message in the topic and writes it to console.
+  * it is a known fact that platform on which runs is abstract. But can a script read the system info and share the same ?
+     * I guess we can use navigator as indicated in https://stackoverflow.com/questions/9514179/how-to-find-the-operating-system-version-using-javascript
+       
+  
