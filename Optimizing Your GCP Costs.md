@@ -72,5 +72,8 @@
   * function code simply reads the message in the topic and writes it to console.
   * it is a known fact that platform on which runs is abstract. But can a script read the system info and share the same ?
      * I guess we can use navigator as indicated in https://stackoverflow.com/questions/9514179/how-to-find-the-operating-system-version-using-javascript
-       
+  * cloud function can be easily tested through gcloud command:
+    * ```gcloud functions call helloWorld --data '{"message":"Hello World!"}'```
+   * to view logs through gcloud (you can also view it through google cloud console)
+    * ```gcloud functions logs read helloWorld```
   
