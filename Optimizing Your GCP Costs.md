@@ -56,3 +56,8 @@
 * popular stacks:
    * MEAN : Mongodb, express.js, Angular.js and node.js
    * LAMP: Linux, Apache, mysql and PHP
+
+* Lab 1:
+  * Big query execution indicates that the data consumption is over a TB
+  * second run of the same sql query was fetched from cache
+  * on setting the quota for perday usage size the big query execution failed giving quota warning. Note that in this case cache was explicitly disabled so that query re-fetches the data.  
