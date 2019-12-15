@@ -86,3 +86,11 @@
     * Like attaching, even *external **static** ip address* can be detached from a resource( VM instance) and can be attached to some other resource. Now when *external* ip address is detached resources will have internal ip addres.
     
    * in this lab a cloud function runs to search for all the unused ip address and then it deletes them.
+   
+* Lab 5:
+  * In this final lab, a cloud function converts the storage class of a bucket to Nearline through a python program.
+  * It would have been best if the bucket is cahnged to different class based on the storage access but it was a dummy to change the bucket statically to different class
+      * stack monotoring alert to raise pubsub even to indicate that for 5 min (or 5 years) the bucket is not accessed
+      * cloud function gets triggered based on that and reads the alert bucket name 
+      * then the cloud function changes the class to nearline
+      * there can be one more alert to change it back to region as soon as 10-20 access request come to it.
