@@ -77,3 +77,12 @@
    * to view logs through gcloud (you can also view it through google cloud console)
     * ```gcloud functions logs read helloWorld```
   
+* Lab 4: 
+  * a new concept to me that there can be seperate static external ip address.
+  ```
+  gcloud compute addresses create $USED_IP --project=$PROJECT_ID --region=us-central1
+  ```
+    * creates no compute instance but a static ip address for a project that belong to us-central1. *In use by* field is empty for the created ip address.Now this ip can be assigned to any VM that is yet to be created (while creating it).
+    * Like attaching, even *external **static** ip address* can be detached from a resource( VM instance) and can be attached to some other resource. Now when *external* ip address is detached resources will have internal ip addres.
+    
+   * in this lab a cloud function runs to search for all the unused ip address and then it deletes them.
