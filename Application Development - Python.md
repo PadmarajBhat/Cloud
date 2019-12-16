@@ -15,4 +15,14 @@
       * requirements.txt
          * as a common practice to store all the required python packages and its versions.
       * quiz folder (app)
-         * has smaller apps constructing quiz app  
+         * each app folder has **__init__.py** file in it; including the parent app *quiz*.
+         * quiz app has 3 smaller apps constructing quiz app  
+         * api app (folder)
+            * focusses on creating the the end function which does the datastore fetch and also the evaluation based on user answers.
+            * api.py
+               * defines the functions i.e. to fetch and evaluate the quiz
+            * router.py
+               * defines the Blueprint for the api app which accepts the urls : *'/quizzes/<quiz_name>' && '/quizzes/feedback/<quiz_name>'*
+               * it uses api.py functions to provide service to these urls requests.
+         * gcp app (folder)
+         * webapp app (folder)
