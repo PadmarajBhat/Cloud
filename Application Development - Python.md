@@ -31,3 +31,9 @@
             * here there are no blue print because they are addressed in api. This folder acts as logical entity for all the datastore 
             * ../api/api.py files uses these functions in its fetch and evaluate definitions
          * webapp app (folder)
+            * encompasses the templates and java scripts
+            * router.py: does the handle the important url / core urls of the quiz app
+               * / : root
+               * '/client/<path:path>' : static path for angular(old version) client app
+               * '/questions/add' : to add questions.
+               * these are the 3 main tasks that user would do once he logs into the system.
