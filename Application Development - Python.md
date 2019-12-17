@@ -24,5 +24,10 @@
             * router.py
                * defines the Blueprint for the api app which accepts the urls : *'/quizzes/<quiz_name>' && '/quizzes/feedback/<quiz_name>'*
                * it uses api.py functions to provide service to these urls requests.
+            * __init__.py : dummy file for this sub app (under quiz app)
          * gcp app (folder)
+            * __init__.py : dummy file for this sub app (under quiz app)
+            * datastore.py : defines the functions for *list_entities and save_question* 
+            * here there are no blue print because they are addressed in api. This folder acts as logical entity for all the datastore 
+            * ../api/api.py files uses these functions in its fetch and evaluate definitions
          * webapp app (folder)
