@@ -45,4 +45,4 @@
 * **public** url of which is saved in the database
 * in the respose for quiz question, this public url is shared to front end which loads the image from the cloud storage image location directly (through the link)
       * *<img>* tag in the html page does hold the **ng-src** directive will have the image url. This img tag does the load of the image in the page.
-
+* in *add.html* (under templates directory), *<input>* tag has *type=file* in it which indicates that the web form element would accept file as input. In our context, image file is what it is going to accept (it does not matter type of the image or theoritically, it does not matter if it is not even an image)
