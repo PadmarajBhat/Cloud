@@ -44,4 +44,5 @@
 * the image is saved in the cloud storage
 * **public** url of which is saved in the database
 * in the respose for quiz question, this public url is shared to front end which loads the image from the cloud storage image location directly (through the link)
+      * *<img>* tag in the html page does hold the **ng-src** directive will have the image url. This img tag does the load of the image in the page.
 
