@@ -37,3 +37,11 @@
                * '/client/<path:path>' : static path for angular(old version) client app
                * '/questions/add' : to add questions.
                * these are the 3 main tasks that user would do once he logs into the system.
+
+# App Dev: Storing Image and Video Files in Cloud Storage - Python
+* In this lab an image is taken in the input quiz
+   * it is sent as a post request, so the input request.form['image'] has the image as the binary(perhaps)
+* the image is saved in the cloud storage
+* **public** url of which is saved in the database
+* in the respose for quiz question, this public url is shared to front end which loads the image from the cloud storage image location directly (through the link)
+
