@@ -54,3 +54,9 @@
    * use the blob to upload the file
    * optionally make the blob public
    * get the blob url for storing in db for later access
+* flask routing study:
+   * add.html is called when *create question* is clicked
+   * now this call raises the http.get request which routes or rather renders the html page (add.html)
+   * when the page gets loaded and question , answers are entered and finally when submit is clicked
+   * again the same service is called */questions/add/* but last time it was http.get but this time it is http.post
+   * when post method request comes to flask rest service it does the save the q&a and routes to '/' directory and thats how the home screen is shown.
