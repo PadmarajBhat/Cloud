@@ -60,3 +60,11 @@
    * when the page gets loaded and question , answers are entered and finally when submit is clicked
    * again the same service is called */questions/add/* but last time it was http.get but this time it is http.post
    * when post method request comes to flask rest service it does the save the q&a and routes to '/' directory and thats how the home screen is shown.
+
+# App Dev: Adding User Authentication to your Application - Python
+   * firebase authentication
+      * is a third party tool which takes the user credentials and contacts the respective email host for authentication.
+      * the tool also gives a *.js* to be included in the web page to avail the firebase app and auth services
+      * while registering the app to firebase, a unique url with respect the app is configured in firebase.
+      * note that if you have multiple gcp project then you can enable it on all or or one. For all project the same steps of registration has to be done.
+      * within a same project if multiple app requires the authentication then also same registration step has to happen. Here each url can have different method of authentication
