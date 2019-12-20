@@ -7,3 +7,12 @@
   * Ans : https://stackoverflow.com/questions/45850375/use-custom-domain-for-google-cloud-function
     * functions rely on firebase hosting for the same
     * cloud run seems to have direct option of domain name
+
+* Can I try out gcp projects locally before I run in GCP?
+  * Like if I want to run pubsub coding run locally, it is not possible
+    ```
+    # TODO: Create Topic Object to reference feedback topic
+
+    topic_path = publisher.topic_path(project_id, 'feedback')
+    ```
+  * gcp project id is required to run so irrespective of the program running locally or on gcp cloud shell, we would be needing gcp account.
