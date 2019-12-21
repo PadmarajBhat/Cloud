@@ -79,3 +79,11 @@
       * these methods are invoked when login screen buttons are pressed.
       * note that if you have multiple gcp project then you can enable it on all or or one. For all project the same steps of registration has to be done.
       * within a same project if multiple app requires the authentication then also same registration step has to happen. Here each url can have different method of authentication
+
+# App Dev: Deploying the Application into App Engine Flexible Environment - Python
+* lab focuses on creating a yaml file with environment configuration
+* suitable for single app deployment
+* first deployment is damn slow
+* second deployment is faster
+* canary deployment or blue green deployment are easy; rolling update is by default
+   * canary deployment is using *split traffic* option.
