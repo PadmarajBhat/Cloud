@@ -33,6 +33,7 @@
          * webapp app (folder)
             * encompasses the templates and java scripts
             * router.py: does the handle the important url / core urls of the quiz app
+            
                * / : root
                * '/client/<path:path>' : static path for angular(old version) client app
                * '/questions/add' : to add questions.
@@ -87,3 +88,15 @@
 * second deployment is faster
 * canary deployment or blue green deployment are easy; rolling update is by default
    * canary deployment is using *split traffic* option.
+# App Dev: Deploying the Application into Kubernetes Engine - Python
+* splits the previous app into front end and backend
+* front end:
+   * split the *webclient* directory as the seperate app. Now this directory cannot be on its own, it requires other dependencies and those are moved along with this directory.
+   * logically, the front end app collects the user inputs
+      * anwers to the quests and feedback
+   * it then publishes the same to pubsub
+* backend:
+   * subscribes to the pubsub topic 
+   * on topic message, calls the evalute quiz and sentimental analysis of the feedback string
+   * saves the score of quiz, rating and sentimental analysis score in the spanner db.
+      
