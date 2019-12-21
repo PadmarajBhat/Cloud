@@ -16,3 +16,14 @@
     topic_path = publisher.topic_path(project_id, 'feedback')
     ```
   * gcp project id is required to run so irrespective of the program running locally or on gcp cloud shell, we would be needing gcp account.
+  
+* Why do we need Kubernetes when we have app engine?
+  * app engine is for auto scaling single service
+    * yaml file created for deployment indicates environment (variables) for the single app
+      * like environment variable
+      * run time configuration : python version
+      * entry point : how do you run the app
+  * Kubernetes has also the auto scaling functionality but that is meant for multiple micro services.
+     * you are focussed on scaling all or at least one micro services
+     * you need to explicitly create images using dockerfile 
+     * kubernetes yaml file will use those images and deploy the service 
