@@ -27,3 +27,10 @@
      * you are focussed on scaling all or at least one micro services
      * you need to explicitly create images using dockerfile 
      * kubernetes yaml file will use those images and deploy the service 
+
+* how does the kubernetes differentiate deployment and service request
+  * ```kind: Deployment``` : indicates the yaml file which has this has environment instruction
+    * you would indicate that the instances are exposed to perticular port
+  * ```kind: Service``` : indicates the yaml file which has this has load balancer exposing the services (usually front end application)
+    * you would indicate load balancer to route the traffic to a server which has multiple instances running in the kubernetes cluster 
+  
