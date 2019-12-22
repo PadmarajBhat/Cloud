@@ -15,3 +15,10 @@
          * client.publish(mqttTopic,....) : here a publish is done to a topic 
     * listenForConfigMessages : to listen to the config msgs from IoT core
     * listenForErrorMessages : to listen to the error msg from IoT Core
+    * there are 2 topics or *messageType*:
+      * event : for connection related
+      * state : for message transmission
+         * this will enable respective subscriber for listening activity
+         * schedulePublishDelayMs : determines the timeout of the message write
+            * 1000 milli second for connection 
+            * 2000 milli second for send messge 
