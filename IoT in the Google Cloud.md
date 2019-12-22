@@ -5,3 +5,13 @@
   * intent is devices will use the key to device registry. Device registry is the first step, post which it can send the data to IoT Core.
 * a node.js program acts as a device and uses the *pem*(key) to register and communicate a message to IoT Core.
 * subscriber to pubsub reads the message to a topic and prints it on the screen
+* to decode the node.js code:
+  * there are 3 activities the devices are emulated to perform through node.js code
+    * mqttDeviceDemo : mqtt device connection to IoT core
+    * sendDataFromBoundDevice : to send data from the device
+      * the *publish* steps are:
+         * const mqtt = require('mqtt');
+         * client = mqtt.connect(connectionArgs); : here connectionArgs are passed during the call of the function *sendDataFromBoundDevice*.
+         * client.publish(mqttTopic,....) : here a publish is done to a topic 
+    * listenForConfigMessages : to listen to the config msgs from IoT core
+    * listenForErrorMessages : to listen to the error msg from IoT Core
