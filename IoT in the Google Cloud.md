@@ -26,3 +26,11 @@
 # Streaming IoT Data to Google Cloud Storage
 * intent of the lab is to route the incoming sensor messages to a file in cloud storage. There are 2 simulated sensor (programs) which periodically send the the temperature at 2 locations. These temperature info along with timestamp is saved in the cloud storage bucket files.
    * why 2 files got created ?  
+* architecture:
+  * 2 devices registers to IoT core
+  * IoT core publishes the inbound messages from the devices to pubsub topic
+  * Dataflow job subscribes to the topic and loads the messages to a file in storage at periodically ( 5 min )
+    * note that not even a single line of code is written.
+      * there are job templates like  ```Cloud PubSub to Text Files on Cloud Storage``` which not only has the pipeline required for the actions ( name explains it all) but also has the codes to do the end point actions like reading/writing etc.
+      * job creation takes topic as the input and also the bucket where the file has to created and updated.
+      
