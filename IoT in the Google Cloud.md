@@ -22,3 +22,7 @@
          * schedulePublishDelayMs : determines the timeout of the message write
             * 1000 milli second for connection 
             * 2000 milli second for send messge 
+
+# Streaming IoT Data to Google Cloud Storage
+* intent of the lab is to route the incoming sensor messages to a file in cloud storage. There are 2 simulated sensor (programs) which periodically send the the temperature at 2 locations. These temperature info along with timestamp is saved in the cloud storage bucket files.
+   * why 2 files got created ?  
