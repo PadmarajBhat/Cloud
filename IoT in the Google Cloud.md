@@ -34,4 +34,7 @@
       * there are job templates like  ```Cloud PubSub to Text Files on Cloud Storage``` which not only has the pipeline required for the actions ( name explains it all) but also has the codes to do the end point actions like reading/writing etc.
       * job creation takes topic as the input and also the bucket where the file has to created and updated.
       * note that file write in batch fashion: every 5 minutes. i.e. subscriber reads and forward to the next stage in the pipeline. The writer simply accumulates the messages for 5 minutes and flushes to file at once. This not only reduces frequent write operation and also makes the *window* safer for delayed message.
-      
+* note that 2 devices had same rsa certification created from the user id which is different from that of gcp project owner.
+ * RSA certification is got through 
+   ```openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem \
+    -nodes -out rsa_cert.pem -subj "/CN=unused"```
