@@ -26,6 +26,8 @@
 # Streaming IoT Data to Google Cloud Storage
 * intent of the lab is to route the incoming sensor messages to a file in cloud storage. There are 2 simulated sensor (programs) which periodically send the the temperature at 2 locations. These temperature info along with timestamp is saved in the cloud storage bucket files.
    * why 2 files got created ?  
+    * one window file : sensor data collected over 5 minutes window
+    * another is consolidated : aggregated sensor data for 2 devices configured under IoT registry.
 * architecture:
   * 2 devices registers to IoT core
   * IoT core publishes the inbound messages from the devices to pubsub topic
@@ -38,3 +40,6 @@
  * RSA certification is got through 
    ```openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem \
     -nodes -out rsa_cert.pem -subj "/CN=unused"```
+# Streaming IoT Core Data to Dataprep
+* The lab focusses on extending last lab work, first it creates the cloud storage file from the sensor data. Dataprep loads this data and perform data transformation.
+
