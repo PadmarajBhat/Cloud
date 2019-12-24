@@ -38,13 +38,17 @@
       * note that file write in batch fashion: every 5 minutes. i.e. subscriber reads and forward to the next stage in the pipeline. The writer simply accumulates the messages for 5 minutes and flushes to file at once. This not only reduces frequent write operation and also makes the *window* safer for delayed message.
 * note that 2 devices had same rsa certification created from the user id which is different from that of gcp project owner.
  * RSA certification is got through 
-   ```openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem \
-    -nodes -out rsa_cert.pem -subj "/CN=unused"```
+   ```openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes -out rsa_cert.pem -subj "/CN=unused"```
 # Streaming IoT Core Data to Dataprep
 * The lab focusses on extending last lab work, first it creates the cloud storage file from the sensor data. Dataprep loads this data and perform data transformation.
 * transformation targetted in dataprep are:
   * renaming column
   * rounding the temperation to 2 decimal digits
   * hourly scheduling these 2 activities for the new data arrived.
-  * these data are stored back to cloud storage for further processing
+  * these data are stored back to cloud storage for further processing (may be ml engines)
 
+# Building an IoT Analytics Pipeline on Google Cloud Platform
+* same focus as that of last but this time querying the sensor data through big query
+* dataflow template is changed to route the sensor data to big query table.
+  * empty big query table is created with 3 columns (timestamp, device, temperature)
+  
