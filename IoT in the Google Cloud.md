@@ -46,6 +46,8 @@
   * rounding the temperation to 2 decimal digits
   * hourly scheduling these 2 activities for the new data arrived.
   * these data are stored back to cloud storage for further processing (may be ml engines)
+  * in dataprep, when column based transformation are stored as reciepe items and then shows the outcome of transformation immediately
+  * **Run Job** actually runs the reciepe on the all the data indicated in the import data. You also have an option of randomly selecting data.
 
 # Building an IoT Analytics Pipeline on Google Cloud Platform
 * same focus as that of last but this time querying the sensor data through big query
