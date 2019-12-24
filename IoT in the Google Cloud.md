@@ -42,4 +42,9 @@
     -nodes -out rsa_cert.pem -subj "/CN=unused"```
 # Streaming IoT Core Data to Dataprep
 * The lab focusses on extending last lab work, first it creates the cloud storage file from the sensor data. Dataprep loads this data and perform data transformation.
+* transformation targetted in dataprep are:
+  * renaming column
+  * rounding the temperation to 2 decimal digits
+  * hourly scheduling these 2 activities for the new data arrived.
+  * these data are stored back to cloud storage for further processing
 
