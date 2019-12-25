@@ -58,4 +58,8 @@
 * same focus as that of last lab but this time a server munches the data and give a *response* back to update the device.
 * so far it has been one way, i.e. telemetric data was injested and analysed but nothing went back to the device but this lab focusses on updating the device
 * for the use case sake, an ac sensor sends the temperature data and it is turned on or off based on the current temperature.
+* *modifyCloudToDeviceConfig* : is used to send back the update to the device. It it said that it is built on top of *httplib2*. IoT core is configured to take both MQQT and HTTP requests.
+  * as indicated in https://cloud.google.com/iot/docs/reference/cloudiot/rest/v1/projects.locations.registries.devices/modifyCloudToDeviceConfig; this function writes it back to cloud iot core which later translates into respective device.
+  * inward flow : device --> cloud iot core --> pubsub publishing
+  * outward flow : pubsub subscription --> data analysis and decision --> cloud iot core --> device
 
