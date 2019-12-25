@@ -62,4 +62,5 @@
   * as indicated in https://cloud.google.com/iot/docs/reference/cloudiot/rest/v1/projects.locations.registries.devices/modifyCloudToDeviceConfig; this function writes it back to cloud iot core which later translates into respective device.
   * inward flow : device --> cloud iot core --> pubsub publishing
   * outward flow : pubsub subscription --> data analysis and decision --> cloud iot core --> device
-
+* subscriber indicates: how long the message has to be present in pubsub that a publisher has provided !!!!
+  * in google console,  we can see the subscribers logs and health checks
