@@ -64,3 +64,5 @@
   * outward flow : pubsub subscription --> data analysis and decision --> cloud iot core --> device
 * subscriber indicates: how long the message has to be present in pubsub that a publisher has provided !!!!
   * in google console,  we can see the subscribers logs and health checks
+* interesting read : https://cloud.google.com/iot/docs/reference/cloudiot/rest/v1/projects.locations.registries.devices.configVersions#DeviceConfig
+  * if the device is disconnected, there may be multiple version of device config update but when it comes online, latest is sent 
