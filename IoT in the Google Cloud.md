@@ -54,3 +54,8 @@
 * dataflow template is changed to route the sensor data to big query table.
   * empty big query table is created with 3 columns (timestamp, device, temperature)
   
+# APIs Explorer: PubSub and IoT
+* same focus as that of last lab but this time a server munches the data and give a *response* back to update the device.
+* so far it has been one way, i.e. telemetric data was injested and analysed but nothing went back to the device but this lab focusses on updating the device
+* for the use case sake, an ac sensor sends the temperature data and it is turned on or off based on the current temperature.
+
