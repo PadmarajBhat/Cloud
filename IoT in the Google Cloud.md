@@ -73,3 +73,8 @@
 * now here in this lab telemetry data is read from the pubsub topic and written into stackdriver logging. 
   * cloud function is configured to get triggered on **publishing** on pubsub topic. 
      * if there are multiple entries to pubsub concurrently, will the function scale and run in parallel to make update to stack logging?
+           * **Ans**: Yes, a clound function run has only activities as follows:
+             * read the inbound message (that was recieved at pubsub and passed to function through trigger)
+             * format the data as required for the stack driver logging
+             * push the data to logger.
+           * Therefore, multiple triggers will be raised when there are multiple entries to pubsub each resulting in multiple parallel cloud function execution like threads but not exactly threads. 
