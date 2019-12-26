@@ -79,4 +79,8 @@
              * push the data to logger.
            * Therefore, multiple triggers will be raised when there are multiple entries to pubsub each resulting in multiple parallel cloud function execution like threads but not exactly threads. 
 * when there are multiple subscriber when all subscriber have acknowledged the topic message acknowledgement, then only the message is deleted from the pubsub repo.
-* the messages to subscriber are the only ones which have come to pubsub post **subscripiton**
+* the messages to subscriber are the only ones which have come to pubsub post **subscripiton**.
+* as indicated in https://cloud.google.com/pubsub/docs/subscriber:
+   * pull or push are the 2 ways with which subscriber can get message
+     * in case of push : subscriber can optionally change the detention period and then acknowledge the message recieved
+     * in case of pull : subscriber has to initiate the pull request and post delivery of the message, should acknowledge the same.
