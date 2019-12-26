@@ -66,3 +66,10 @@
   * in google console,  we can see the subscribers logs and health checks
 * interesting read : https://cloud.google.com/iot/docs/reference/cloudiot/rest/v1/projects.locations.registries.devices.configVersions#DeviceConfig
   * if the device is disconnected, there may be multiple version of device config update but when it comes online, latest is sent 
+
+# Using Stackdriver Logging with IoT Core Device
+* lab focus remains the same, configure a IoT core registry to run on a perticular region and route all the devices messages that would come to a pubsub topic. Register 2 devices under it (IoT Core). 
+* those 2 devices are programmed to send telemetry data and recieve device configuration over MQTT protocol.
+* now here in this lab telemetry data is read from the pubsub topic and written into stackdriver logging. 
+  * cloud function is configured to get triggered on **publishing** on pubsub topic. 
+     * if there are multiple entries to pubsub concurrently, will the function scale and run in parallel to make update to stack logging?
