@@ -84,3 +84,8 @@
    * pull or push are the 2 ways with which subscriber can get message
      * in case of push : subscriber can optionally change the detention period and then acknowledge the message recieved
      * in case of pull : subscriber has to initiate the pull request and post delivery of the message, should acknowledge the same.
+
+# Using Firestore with Cloud IoT Core for Device Configuration
+* the lab focusses on the configuration update through both CBOR and plain text format. And also introduces to firestore database.
+  * CBOR : Concise Binary Object Representation : focusses on balancing the size the explainabilit of the data in binary format. Devices use internet and the CBOR format helps it condense it. 
+  
