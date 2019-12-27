@@ -91,4 +91,4 @@
   * Firestore: a fast no sql db : https://db-engines.com/en/system/Google+Cloud+Bigtable%3BGoogle+Cloud+Firestore as indicated in the link it is newer option and auto scales.
        * https://firebase.google.com/docs/firestore/query-data/queries: indicates queries are more or less similary to mongoDB
        
-  
+* https://firebase.google.com/products/: firebase provides wide range of products for app development focussed on either web or mobile. Since Google has acquired it on 2014, it has seemless access to gcp resources. More seemlessly integrated to js based. Guess node.js knowledge is a must. 
