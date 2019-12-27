@@ -89,4 +89,6 @@
 * the lab focusses on the configuration update through both CBOR and plain text format. And also introduces to firestore database.
   * CBOR : Concise Binary Object Representation : focusses on balancing the size the explainabilit of the data in binary format. Devices use internet and the CBOR format helps it condense it. 
   * Firestore: a fast no sql db : https://db-engines.com/en/system/Google+Cloud+Bigtable%3BGoogle+Cloud+Firestore as indicated in the link it is newer option and auto scales.
+       * https://firebase.google.com/docs/firestore/query-data/queries: indicates queries are more or less similary to mongoDB
+       
   
