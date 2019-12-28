@@ -96,3 +96,4 @@
 # Streaming IoT Kafka to Google Cloud Pub/Sub
 * the lab focusses on the interconnect between kafka and pubbsub. Kafka is a popular streaming platform and integrating with it would enables access the external iot devices telemetry data
 * lab first checks 2 way data transfer between pubsub and kafka and later fixes cloud iot devices to send telemetry data to kafka. This is to illustrate cloud driving the iot devices and host would be interested in only telemetry data.
+ * for the above set up 2 kafka in the entire echo system. One in cloud to send the kafka stream data and other at host side to accept the streaming data.
