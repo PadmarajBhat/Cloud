@@ -92,3 +92,6 @@
        * https://firebase.google.com/docs/firestore/query-data/queries: indicates queries are more or less similary to mongoDB
        
 * https://firebase.google.com/products/: firebase provides wide range of products for app development focussed on either web or mobile. Since Google has acquired it on 2014, it has seemless access to gcp resources. More seemlessly integrated to js based. Guess node.js knowledge is a must. 
+
+# Streaming IoT Kafka to Google Cloud Pub/Sub
+* the lab focusses on the interconnect between kafka and pubbsub. Kafka is a popular streaming platform and integrating with it would enables access the external iot devices telemetry data
