@@ -97,3 +97,8 @@
 * the lab focusses on the interconnect between kafka and pubbsub. Kafka is a popular streaming platform and integrating with it would enables access the external iot devices telemetry data
 * lab first checks 2 way data transfer between pubsub and kafka and later fixes cloud iot devices to send telemetry data to kafka. This is to illustrate cloud driving the iot devices and host would be interested in only telemetry data.
  * for the above set up 2 kafka in the entire echo system. One in cloud to send the kafka stream data and other at host side to accept the streaming data.
+ * It is observed during 2 way testing that when kafka sends the data to pubsub the order got differed but when pubsub sent it was co incidentally in the same order.
+ * Does kafka support mqtt and http both?
+ * what is the default retention period in kafka
+ * if there are kafka cluster at the host end, does it require to have same cluster node in gcp ?
+ * if the 2 messages are different format ( one that cloud Iot device sends and one that kafka expects then we might add a dataflow in between to transform the data. But does does dataflow have kafka connectors ? 
