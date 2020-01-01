@@ -14,3 +14,5 @@
      * egress.yaml --> spec --> destination --> service
    * his nodejs code could act like a middle ware and backend based on the environment variable. This variable was set using kubernetes yaml file.
    * now with this he created 3 layers: frontend calling middleware calling backend. Backend gets the time and sends it back to middleware and then to front end from middleware.
+   * he then demonstrates the failure (500 error) in the app and explains the cascading effect.
+   * He later shows the http retry capabilities of the Istio to solve the 500 error. 
