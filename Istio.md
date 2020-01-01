@@ -7,3 +7,10 @@
     * start a kubernetes cluster
     * scale the app upto 5 instances with only 4 vms.
     * finally Istio to manage the interconnection etween micro services.  
+
+ * Istio:
+   * He had the yaml file with which he issued command similart to kubectl
+   * first he whitelisted a external website.
+     * egress.yaml --> spec --> destination --> service
+   * his nodejs code could act like a middle ware and backend based on the environment variable. This variable was set using kubernetes yaml file.
+   * now with this he created 3 layers: frontend calling middleware calling backend. Backend gets the time and sends it back to middleware and then to front end from middleware.
