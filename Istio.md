@@ -16,3 +16,8 @@
    * now with this he created 3 layers: frontend calling middleware calling backend. Backend gets the time and sends it back to middleware and then to front end from middleware.
    * he then demonstrates the failure (500 error) in the app and explains the cascading effect.
    * He later shows the http retry capabilities of the Istio to solve the 500 error. 
+   * Tools that Istio Provides:
+     * service graph: identifies the flow between the services. Note that not all services call other services.
+     * middleware routing : to route the transaction to the newer version of a service which might be at the middle of the service flow to do the integration testing
+     * Istio charts: which gives various metrics on the overall system like overall success rate etc.
+     * stack driver logs
