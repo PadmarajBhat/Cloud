@@ -19,5 +19,6 @@
    * Tools that Istio Provides:
      * service graph: identifies the flow between the services. Note that not all services call other services.
      * middleware routing : to route the transaction to the newer version of a service which might be at the middle of the service flow to do the integration testing
+       * you can also have weighted routing  like 80:20 etc.
      * Istio charts: which gives various metrics on the overall system like overall success rate etc.
      * stack driver logs
