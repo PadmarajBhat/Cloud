@@ -25,3 +25,5 @@
      
    * Istio is a layer on the top of kubernetes where api communication can be managed. The YAML input are executed through kubectl because **apiVersion** would include the Istio version.
    * Knative sits on the top of Istio and helps to build, deploy and manage serverless workloads.
+   * Istio can also work between hybrid cloud environment.
+   * Can also help in API management. 
