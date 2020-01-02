@@ -22,3 +22,6 @@
        * you can also have weighted routing  like 80:20 etc.
      * Istio charts: which gives various metrics on the overall system like overall success rate etc.
      * stack driver logs
+     
+   * Istio is a layer on the top of kubernetes where api communication can be managed. The YAML input are executed through kubectl because **apiVersion** would include the Istio version.
+   * Knative sits on the top of Istio and helps to build, deploy and manage serverless workloads.
