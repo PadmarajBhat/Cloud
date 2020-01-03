@@ -27,3 +27,9 @@
    * Knative sits on the top of Istio and helps to build, deploy and manage serverless workloads.
    * Istio can also work between hybrid cloud environment.
    * Can also help in API management. 
+
+* 4 imortant components of a dashboard:
+ * traffic: both ingress and egress
+ * error rate: out of those traffic how much is succussfull.
+ * latency: how fast are we in executing. Note that it is fine drilling on where the time takes other wise egress traffic indicates more or less same info.
+ * saturation: by when the application would explode if not scaled.
