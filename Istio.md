@@ -40,3 +40,5 @@
  * cidadel : for security
  
  * Understanding Kubernetes Pods and Services: https://thenewstack.io/kubernetes-way-part-one/
+  * Services : acts as the common label for differnt pods
+  * pods : containers at execution and can be scaled.
