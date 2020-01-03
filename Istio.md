@@ -33,3 +33,8 @@
  * error rate: out of those traffic how much is succussfull.
  * latency: how fast are we in executing. Note that it is fine drilling on where the time takes other wise egress traffic indicates more or less same info.
  * saturation: by when the application would explode if not scaled.
+
+* There are 3 components in the Istio:
+ * Pilot : 
+ * Mixer
+ * cidadel : for security
