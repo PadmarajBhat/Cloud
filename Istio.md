@@ -38,3 +38,5 @@
  * Pilot : 
  * Mixer
  * cidadel : for security
+ 
+ * Understanding Kubernetes Pods and Services: https://thenewstack.io/kubernetes-way-part-one/
