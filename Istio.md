@@ -42,3 +42,8 @@
  * Understanding Kubernetes Pods and Services: https://thenewstack.io/kubernetes-way-part-one/
   * Services : acts as the common label for differnt pods
   * pods : containers at execution and can be scaled.
+# Installing the Istio on GKE Add-On with Kubernetes Engine
+* the lab focusses on creating kubernetes cluster with Istio add on
+* istioctl installation
+* deploying book review application on kubernetes cluster using ```istioctl kube-inject```.
+* 
