@@ -52,3 +52,5 @@
   * from where the ingress traffic can come (http/80)
   * virtual services which indicates which URI from user lands to the which routing page
   
+# Installing Open Source Istio on Kubernetes Engine
+* again the same application deployment but through Istio installing as software on kubernetes cluster.
