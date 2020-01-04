@@ -48,3 +48,7 @@
 * deploying book review application on kubernetes cluster using ```istioctl kube-inject```.
 * the above command do not installs app in the cluster but in the contrary it modifies the yaml file to include the ISTIO related proxy details. Now with the above command we have new yaml file suitable for deployment through Istio
 * the deployment is done through kubectl apply command itself. Here it would take new yaml created by istioctl 
+* samples/bookinfo/networking/bookinfo-gateway.yaml file defines the 
+  * from where the ingress traffic can come (http/80)
+  * virtual services which indicates which URI from user lands to the which routing page
+  
