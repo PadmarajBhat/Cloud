@@ -12,4 +12,5 @@
 * revisiting kubernetes : https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16
   * https://www.magalix.com/blog/kubernetes-101-concepts-and-why-it-matters 
   * bit on yaml: https://riptutorial.com/yaml
+  * yaml is easy but how to create on easily ? : https://developer.ibm.com/tutorials/yaml-basics-and-usage-in-kubernetes/
    
