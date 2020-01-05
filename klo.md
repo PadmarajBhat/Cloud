@@ -8,3 +8,5 @@
 * https://medium.com/@jhsu98/whats-the-difference-between-python-s-append-and-extend-list-methods-65e9bca792f0?source=email-feada7b3aa03-1577653325170-digest.reader------1-59------------------0379c6f2_4d2b_4fe9_b9a6_a66e847bb0fd-1-----&sectionName=top
 
 * https://www.youtube.com/watch?v=nNgdrTN23zo
+
+* revisiting kubernetes : https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16
