@@ -11,3 +11,5 @@
 
 * revisiting kubernetes : https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16
   * https://www.magalix.com/blog/kubernetes-101-concepts-and-why-it-matters 
+  * bit on yaml: https://riptutorial.com/yaml
+   
