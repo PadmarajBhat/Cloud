@@ -14,3 +14,5 @@
   * bit on yaml: https://riptutorial.com/yaml
   * yaml is easy but how to create on easily ? : https://developer.ibm.com/tutorials/yaml-basics-and-usage-in-kubernetes/
    
+* cheat sheet of neural network: I know hardly 3 of them :P
+  * https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463
