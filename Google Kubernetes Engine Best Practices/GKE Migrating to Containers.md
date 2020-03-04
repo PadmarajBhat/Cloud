@@ -10,3 +10,6 @@
       * number of instances, initially 1 but later 3
       * ease of scaling is the highlight of the lab. Later may be in the future we will also see how it can also auto scale basis of request/sec or similar threshold value.
 * In the non kubernetes cases, we would need a load balancer and fire wall set up to scale the server processes. However, kubernetes engine does that all for us.
+
+* ApacheBench (ab) is used to pump the concurrent requests to check the threshold of the server. 
+```ab -c 120 -t 60  http://<IP_ADDRESS>/prime/10000```
