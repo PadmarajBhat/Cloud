@@ -1,6 +1,7 @@
 # Macro example
 
 * to create seperate sheet for each equity at NSE
+```
 function M4() {
   var spreadsheet = SpreadsheetApp.getActive();
   var quoteList = ["NSE:FORCEMOT"
@@ -19,3 +20,4 @@ function M4() {
                     });
   
 };
+```
