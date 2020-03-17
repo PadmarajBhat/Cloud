@@ -26,3 +26,6 @@ function M4() {
 * Triggers to the sheet failed with ```We're sorry, the JavaScript engine reported an unexpected error. Error code DEADLINE_EXCEEDED```
   * The manual says the execution took longer period, but according to my calculations it is the same behvior to that of pysheet delayed response.
     * the reason may be : https://www1.nseindia.com/content/press/Download_Real_Time_Tariff_Domestic_01042020.pdf
+    * or how about randomizing the list so that map does not yeild same list values
+    * how about IST day time run ?
+    * how about weekly run ?
