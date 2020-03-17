@@ -23,3 +23,4 @@ function M4() {
 ```
 
 * https://www.codingforentrepreneurs.com/projects/python-google-colab-sheets-drive/google-sheet-pandas-dataframe
+* Triggers to the sheet failed with ```We're sorry, the JavaScript engine reported an unexpected error. Error code DEADLINE_EXCEEDED```
