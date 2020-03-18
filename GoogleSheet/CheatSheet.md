@@ -32,3 +32,5 @@ function M4() {
 
 * https://colab.research.google.com/notebooks/io.ipynb#scrollTo=u22w3BFiOveA: how to access pydrive, sheet and google drive mount
   * hoping that colab gives extra hourse power. Note that gsheet were not read by pygsheets
+  
+* merging all dfs together is faster : https://stackoverflow.com/questions/38246166/efficient-way-to-combine-pandas-data-frames-row-wise
