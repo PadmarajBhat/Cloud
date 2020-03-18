@@ -31,3 +31,4 @@ function M4() {
     * how about weekly run ?
 
 * https://colab.research.google.com/notebooks/io.ipynb#scrollTo=u22w3BFiOveA: how to access pydrive, sheet and google drive mount
+  * hoping that colab gives extra hourse power. Note that gsheet were not read by pygsheets
