@@ -37,3 +37,7 @@ function M4() {
 * the required format for google finance timestamp : strftime("%m/%d/%Y")
 * **Error**: WARNING:googleapiclient.http:Sleeping 7.54 seconds before retry 3 of 3 for request: GET
   * Seems like ignorable warning : may be due to too fast query execution ???
+    * yes: It can be ignored as it is loading the data for it.
+    
+* **Error** : HttpError: <HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/1ewMEcVHtLs6PBWdFZ3bgImFLcUqXcB4yXVWr4kns9no?fields=properties%2Csheets%2Fproperties%2CspreadsheetId%2CnamedRanges&includeGridData=false&alt=json returned "The service is currently unavailable.">
+  * Parallelism also caused burden on the host which has blocked the app
