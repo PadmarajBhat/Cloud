@@ -41,3 +41,4 @@ function M4() {
     
 * **Error** : HttpError: <HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/1ewMEcVHtLs6PBWdFZ3bgImFLcUqXcB4yXVWr4kns9no?fields=properties%2Csheets%2Fproperties%2CspreadsheetId%2CnamedRanges&includeGridData=false&alt=json returned "The service is currently unavailable.">
   * Parallelism also caused burden on the host which has blocked the app
+    * sequential execution took 1:30hrs
