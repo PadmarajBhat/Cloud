@@ -34,4 +34,6 @@ function M4() {
   * hoping that colab gives extra hourse power. Note that gsheet were not read by pygsheets
   
 * merging all dfs together is faster : https://stackoverflow.com/questions/38246166/efficient-way-to-combine-pandas-data-frames-row-wise
-* the required format for google finance timestamp : strftime("%m/%d/%Y
+* the required format for google finance timestamp : strftime("%m/%d/%Y")
+* **Error**: WARNING:googleapiclient.http:Sleeping 7.54 seconds before retry 3 of 3 for request: GET
+  * Seems like ignorable warning : may be due to too fast query execution ???
