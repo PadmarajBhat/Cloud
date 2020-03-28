@@ -1,0 +1,2 @@
+# Notes on key observations
+  
